@@ -1,13 +1,10 @@
 var a = 10;
+var b;
+function print() {
 
-function add() {
-
-return a + b;
+console.log(b)
 
 }
+print();
+b =15;
 
-var b =15;
-
-var c = add();
-
-console.log(c);
