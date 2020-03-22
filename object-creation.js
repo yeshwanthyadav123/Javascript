@@ -6,7 +6,7 @@ var student = {
 }
 var type = 'rollNum';
 console.log(student.name + " : " + student[type]); // it is used for dynamic keys
-
+console.log(Object.keys(student).join(","));
 
 // console.log("using new keyword for method");
 
@@ -17,6 +17,8 @@ console.log(student.name + " : " + student[type]); // it is used for dynamic key
 
 // var s1 = new sudakshaStudent('rajesh', 5678);
 // console.log(s1.name + " : " + s1.rollNum);
+// console.log(typeof s1);
+// console.log(s1 instanceof Object);
 
 // console.log("using class");
 // class Vm {
