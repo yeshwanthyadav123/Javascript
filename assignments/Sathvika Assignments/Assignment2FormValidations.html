@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <script src="./Assignment2FormValidations.js"></script>
+        <link rel="stylesheet" type="text/css" href="Assignment2FormValidations.css">
+    </head>
+    <body >
+<form>
+  <div class="im" >
+    <img src="https://bangaloreeducationservices.com/wp-content/uploads/2016/11/banner-student-groups2.jpg" alt="student" width="80%" height="30%">
+    <center><h1 class="h"><u>Registration Form</u></h1></center>
+      </div>
+  <div class="container" >
+    
+    <table align="center" cellpadding="3" width="20%" cellspacing="3">
+	<tr><td>
+  <label for="fname">FirstName:</label></td>
+ <td> <input type="text" id="fname" name="fname" placeholder="Enter First Name!" pattern="[A-Za-z]{1,6}" title="Please provide first name of 1-6 characters" required onchange="fnamevalidation()" oninput="fnamevalidation()" oninvalid="fnamevalidation()" >
+  </td></tr>
+  <tr><td>
+  <label for="fname">LastName:</label></td>
+ <td> <input type="text" id="lname" name="lname" placeholder="Enter Last Name!" pattern="[A-Za-z]{2,8}" title="Please provide last name of  2-8 characters" required onchange="lnamevalidation()"  oninput="lnamevalidation()" oninvalid="lnamevalidation()">
+</td></tr>
+<tr><td>
+  <label for="uname">UserName:</label></td>
+ <td> <input type="text" id="uname" name="uname" placeholder="Enter User Name!" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z][0-9]{8,}" title="please provide user name with minimum of 8 characters" required onchange="unamevalidation()"  oninput="unamevalidation()" oninvalid="unamevalidation()">
+</td></tr>
+<tr><td>
+  <label for="email">Email:</label></td>
+  <td><input type="email" id="emailid" name="emailid" placeholder="Enter Email Id!"  title="please enter a valid email with @ and ." required onchange="emailvalidation()"  oninput="emailvalidation()" oninvalid="emailvalidation()">
+</td></tr>
+<tr><td>
+  <label for="mobile">MobileNumber:</label></td>
+  <td><input type="number" id="mobile" name="mobile" placeholder="Enter Mobile Number!" pattern="[0-9]{10}" title="please provide a valid phone number with 10 digits" required onchange="numbervalidation()"  oninput="numbervalidation()" oninvalid="numbervalidation()">
+</td></tr>
+<tr><td>
+  <label for="postal">PostalCode:</label></td>
+  <td><input type="number" id="postal" name="mobile" placeholder="Enter Postal Code!" pattern="[0-9]{6}" title="please provide a valid postal code with 6 digits" required onchange="postalvalidation()"  oninput="postalvalidation()" oninvalid="postalvalidation()">
+</td></tr>
+</table><br>
+<center>
+  <input class="button" type="submit" value="Submit" onclick="Submitvalidation()"><br><br>
+</center>
+  </div>
+
+</form><br>
+
+</body>
+</html>
