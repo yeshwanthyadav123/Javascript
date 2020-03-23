@@ -1,0 +1,36 @@
+<html>
+    <body>
+    <table>
+            <p><u><b>Student Information</b></u></p>
+                    <tr>
+                        <th>roll no</th>
+                        <th>name</th>
+                        
+                    </tr>
+                    <tbody id="students"></tbody>
+                </table>
+    </body>
+<script type="text/javascript">
+      var student = [];
+    student.push({id:1,name:'chandan'}); 
+    student.push({id:2,name:'saif'});
+    student.push({id:3,name:'aditya'});
+    student.push({id:4,name:'umesh'});
+    student.push({id:5,name:'ranjit'});
+    student.push({id:7,name:'akhil'});
+    student.push({id:8,name:'vikas'});
+    student.push({id:9,name:'rishikesh'});
+    student.push({id:10,name:'priyanshu'});
+  
+     var a='<body>';
+    for(i=0;i<student.length;i++){
+               a+= '<tr>';
+                        a+= '<td>' + student[i].id   +'</td>';
+                        a+= '<td>' + student[i].name + '</td>';
+                        a+= '</tr>';
+  }
+    a += '<body>';
+    document.getElementById('students').innerHTML = a;
+
+    </script>
+    </html>
