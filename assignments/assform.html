@@ -1,0 +1,91 @@
+<html>
+</head>
+<style>
+  .container
+  {
+     
+     border-style: dotted;
+     margin:50px;
+     background-color: coral;
+  }
+  h2
+  {
+    color :rgb(22, 4, 10);
+    background-color: papayawhip;
+  }
+  input[type=text], select {
+  width: 30%;
+  height: 25px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #7e18dd;
+  
+  box-sizing: border-box;
+}
+
+</style>
+
+
+<body >
+  <div class="container">
+  <center>
+<h2 id="header"> <b>REGISTRATION  FORM</b></h2>
+
+<form >
+<p>
+First Name:
+<input type="text" id="fname" name="fname" 
+pattern="[A-Za-z]{6}" title="please enter 6 characters" required onchange="fnamevalidity()" 
+oninput="fnamevalidity ()" oninvalid="fnamevalidity ()"/>
+</p>
+
+ <p>
+Last Name : 
+<input type="text" id="lname" name="lname" 
+pattern="[A-Za-z]{2,8}" title="please enter min 2 characters and max 8 characters" required 
+onchange="lnamevalidity()" 
+oninput="lnamevalidity ()" oninvalid="lnamevalidity ()"/>
+ </p>
+
+<p> User Name : 
+ <input type="text" id="uname" name="uname" 
+ pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$"
+title ="please enter atleast one uppercase,one lowercase,one digit and one spl char"required
+onchange="unamevalidity()" 
+oninput="unamevalidity ()" oninvalid="unamevalidity ()"/>
+</p>
+
+
+<p> E-mail : 
+<input type="text" id="mail" name="email" 
+pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+title ="please enter valid mailId" required
+onchange="mailvalidity()" 
+oninput="mailvalidity ()" oninvalid="mailvalidity ()"/>
+</p>
+
+<p> Phone No. : 
+<input type="text" id="phoneno" name="phoneno" 
+pattern="[0-9]{10}"
+title ="please enter 10 digits"required
+onchange="phonenovalidity()" 
+oninput="phonenovalidity ()" oninvalid="phonenovalidity ()"/>
+</p>
+
+<p> Postal Code : 
+<input type="text" id="postal" name="postal" 
+ pattern="[0-9]{8}"
+ title ="please enter 8 digits"
+ onchange="postalvalidity()" 
+oninput="postalvalidity ()" oninvalid="postalvalidity ()"required/>
+ </p>
+
+ 
+ <button type="submit" onclick="Submitval()">Submit</button>
+  
+<script type="text/javascript" src="assform.js"></script>
+</form>
+</center>
+</div>
+</body>
+</html>
