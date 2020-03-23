@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='style.css' type='text/css' />
+</head>
+    <h1>Registration Form</h1>
+    <script>
+        function formValidation()
+{
+var fname=document.registration.firstname;
+var lname = document.registration.lastname;
+var uname = document.registration.username;
+    var uemail = document.registration.email;
+    var mnumber=document.registration.mobilenumber;
+var uzip = document.registration.zip;
+
+if(allLetter1(fname))
+{
+if(allLetter2(lname))
+{        
+if(allLetter3(uname))
+{ 
+if(ValidateEmail(uemail))
+{
+if(phonenumber(mnumber))
+{
+if(zipvalid(uzip))
+{
+} 
+}
+} 
+}
+}
+}
+return false;
+}
+    
+        
+    function allLetter1(fname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(fname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Firstname must have a only alphabets and maximum of 6 chars only');
+uname.focus();
+return false;
+}
+}
+        
+        
+        function allLetter2(lname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(lname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Lastname must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+        
+        
+        function allLetter3(uname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+        
+        
+        
+        function zipvalid(uzip)
+{ 
+var numbers = /^[0-9]+$/;
+if(uzip.value.match(numbers))
+{
+return true;
+}
+else
+{
+alert('ZIP code must have numeric characters only');
+uzip.focus();
+return false;
+}
+}
+       
+        function phonenumber(mnumber)
+{
+var phoneno = /^\d{10}$/;
+if(inputtxt.value.match(phoneno))
+{
+return true;
+}
+else
+{
+alert("Enter a valid mobile number");
+mnumber.focus();
+return false;
+}
+}
+        
+
+        
+        
+        function ValidateEmail(uemail)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(uemail.value.match(mailformat))
+{
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+uemail.focus();
+return false;
+}
+}
+    </script>
+    <body>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+    <li><label for="firstname">FirstName:</label></li>
+<li><input type="text" name="firstname" size="50" required /></li>
+<li><label for="lastname">LastName:</label></li>
+<li><input type="text" name="lastname" size="50" required /></li>
+<li><label for="username">UserName:</label></li>
+<li><input type="text" name="username" size="50" required /></li>
+    <li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" required /></li>
+     <li><label for="number">MobileNumber:</label></li>
+<li><input type="number" name="mobilenumber" size="50" required /></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" required /></li>
+<li><input style="background-color: gold"type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
