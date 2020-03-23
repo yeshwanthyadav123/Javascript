@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+    input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form  id="form">
+    <label for="fname">First Name</label>
+      <p id="firstname" style="color: red;"></p>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." pattern=[A-Za-z]{1,6}  required>
+
+    <label for="lname">Last Name</label>
+      <p id="lastname" style="color: red;"></p>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." pattern=[A-Za-z]{2,8} required>
+
+   <label for="uname">User Name</label>
+       <p id="username" style="color: red;"></p>
+<input type="text" id="uname" name="username" placeholder="Your user name.." pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+      
+      <label for="email">Email</label>
+       <p id="eeemail" style="color: red;"></p>
+<input type="text" id="eemail" name="email"  placeholder="Your mail id.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"      required >
+      
+    <label for="mobile">Mobile</label>
+       <p id="demo" style="color: red;"></p>
+    <input type="number" id="mnumber" name="mnumber"  placeholder="Your mobile number.." required>
+      
+      <label for="pincode">pincode</label>
+      <p id="pin" style="color: red;"></p>
+    <input type="number" id="pinnumber"  placeholder="Your pincode.." required>
+
+    <input type="submit" value="Submit" onclick="myFunction()">
+  </form>
+</div>
+    <script>
+
+     function myFunction() {
+  var x, text;
+
+ 
+  x = document.getElementById("mnumber").value;
+  var y = document.getElementById("pinnumber").value;
+  var z = document.getElementById("eemail").value;
+
+   var w = document.getElementById("uname").value;
+   var s=  document.getElementById("lname").value;
+ var k=document.getElementById("fname").value;
+  
+  if (isNaN(x) || x ==10) {
+    text = "Input  valid";
+       document.getElementById("demo").innerHTML = text;
+     
+  } else {
+    text = "please enter 10 digits ";
+       document.getElementById("demo").innerHTML = text;
+     
+  }
+         if (isNaN(y) || x ==6) {
+    text = "Input  valid";
+       document.getElementById("pin").innerHTML = text;
+     
+  } else {
+    text = "please enter 6 digits ";
+       document.getElementById("pin").innerHTML = text;
+     
+  }
+         if(w.match(document.getElementById("uname").pattern)){
+             text="valid input";
+             document.getElementById("username").innerHTML=text;
+         }
+         else{
+             text="please enter one upper and lower and numeric and symbol with min 8 charecters";
+               document.getElementById("username").innerHTML=text;
+         }
+          if(s.match(document.getElementById("lname").pattern)){
+             text="valid input";
+             document.getElementById("lastname").innerHTML=text;
+         }
+         else{
+             text="please enter min 2 and max 8 charecters with upper and lower";
+               document.getElementById("lastname").innerHTML=text;
+         }
+         if(k.match(document.getElementById("fname").pattern)){
+             text="valid input";
+             document.getElementById("username").innerHTML=text;
+         }
+         else{
+             text="enter 6 charecters with upper and lower";
+               document.getElementById("firstname").innerHTML=text;
+         }
+       
+    
+    
+       
+     
+   
+        }
+         
+ 
+                 
+</script>
+
+</body>
+</html>
