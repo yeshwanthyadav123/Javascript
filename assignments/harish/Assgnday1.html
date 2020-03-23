@@ -1,0 +1,75 @@
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+        <table border="5">
+            
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Phone</th>
+                        <th>sex</th>
+
+                    </tr>
+                    <tbody id="tableData"></tbody>
+                </table>
+                <script type="text/javascript">
+                    var Obj = [
+                        {
+                            name: "harish",
+                            age:  21,
+                            phone: "note7",
+                            sex:"male"
+                        },
+                        {
+                            name: "rahul",
+                            age:  28,
+                            phone: "oppo",
+                            sex:"male"
+
+                        },
+                        {
+                            name: "vikram",
+                            age:  18,
+                            phone: "note7",
+                            sex:"male"
+
+                        },
+                        {
+                            name: "utkarsh",
+                            age:  22,
+                            phone: "poco",
+                            sex:"male"
+
+                        },
+                        {
+                            name: "gokuul",
+                            age:  21,
+                            phone: "samsung",
+                            sex:"male"
+
+                        }
+                    ];
+                    var k = '<body>';
+                    var type = 'age';
+                    for(i = 0;i < Obj.length; i++){
+                        k+= '<tr>';
+                        k+= '<td>' + Obj[i].name + '</td>';
+                        k+= '<td>' + Obj[i].age + '</td>';
+                        k+= '<td>' + Obj[i].phone + '</td>';
+                        k+= '<td>' + Obj[i].sex + '</td>';
+
+                        k+= '</tr>';
+                    }
+                    k+='</body>';
+                    document.getElementById('tableData').innerHTML = k;
+                    </script>
