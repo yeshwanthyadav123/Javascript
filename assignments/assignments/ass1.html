@@ -1,0 +1,49 @@
+<html>
+<body>
+<table>
+<p><u><b>Employee Information</b></u></p>
+<tr>
+<th>EmpId</th>
+<th>Empname</th>
+<th>EmpSal</th>
+</tr>
+<tbody id="ay"></body>
+</table>
+</body>
+<script type"text/javascript">
+var emp=[];
+emp.push({EmpId:101,Empname:'vis',EmpSal:80000});
+emp.push({EmpId:102,Empname:'ooo',EmpSal:30000});
+emp.push({EmpId:103,Empname:'ppp',EmpSal:29000});
+emp.push({EmpId:104,Empname:'rrr',EmpSal:50000});
+emp.push({EmpId:105,Empname:'jjj',EmpSal:28000});
+emp.push({EmpId:106,Empname:'Nki',EmpSal:29000});
+emp.push({EmpId:107,Empname:'Sish',EmpSal:80000});
+emp.push({EmpId:108,Empname:'Aok',EmpSal:75000});
+emp.push({EmpId:109,Empname:'Atha',EmpSal:60000});
+emp.push({EmpId:110,Empname:'Nha',EmpSal:65000});
+emp.push({EmpId:111,Empname:'yash',EmpSal:23000});
+emp.push({EmpId:112,Empname:'nana',EmpSal:29000});
+emp.push({EmpId:113,Empname:'kian',EmpSal:90000});
+emp.push({EmpId:114,Empname:'raul',EmpSal:27000});
+emp.push({EmpId:115,Empname:'hemanth',EmpSal:20000});
+emp.push({EmpId:116,Empname:'pgathi',EmpSal:26500});
+emp.push({EmpId:117,Empname:'pchi',EmpSal:50300});
+emp.push({EmpId:118,Empname:'monu',EmpSal:29000});
+emp.push({EmpId:119,Empname:'chotu',EmpSal:28000});
+emp.push({EmpId:120,Empname:'gudu',EmpSal:55000});
+var t='<body>';
+for(i=0;i<emp.length;i++)
+{
+t+='<tr>';
+t+='<td>'+emp[i].EmpId+'</td>';
+t+='<td>'+emp[i].Empname+'</td>';
+t+='<td>'+emp[i].EmpSal+'</td>';
+t+='</tr>';
+}
+t+='<body>';
+document.getElementById("ay").innerHTML=t;
+</script>
+
+
+</html>
