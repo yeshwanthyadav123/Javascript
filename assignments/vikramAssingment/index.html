@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html Lng="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>JS Form validation</title>
+        <link rel='stylesheet' href="style.css" type='text/css'/>
+		 <script src="script.js"></script>
+		<center>
+        <h1>Registration Form</h1>
+		</center>
+    </head>
+    <body>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+    <li><label for="firstname">FirstName:</label></li>
+<li><input type="text" name="firstname" size="50" required /></li>
+<li><label for="lastname">LastName:</label></li>
+<li><input type="text" name="lastname" size="50" required /></li>
+<li><label for="username">UserName:</label></li>
+<li><input type="text" name="username" size="50" required /></li>
+    <li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" required /></li>
+     <li><label for="number">MobileNumber:</label></li>
+<li><input type="number" name="mobilenumber" size="50" required /></li>
+<li><label for="code">postalCode:</label></li>
+<li><input type="text" name="zip" required /></li>
+<li><input style="background-color: gold"type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
