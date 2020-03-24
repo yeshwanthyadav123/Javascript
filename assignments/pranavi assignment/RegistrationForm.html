@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="RegistrationPageCSS.css">
+<body>
+<div class="container">
+	<div class="header">
+		<h2>Registration Form</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="firstname">Firstname</label>
+			
+			<input type="text" placeholder="enter first name.." id="firstname" oninput="firstnamefun()" onkeypress="firstnamefun()" >
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="lastname">Lastname</label>
+			
+			<input type="text" placeholder="enter lastname.." id="lastname" oninput="lasttnamefun()" onkeypress="lasttnamefun()" >
+			
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Username</label>
+			
+			<input type="text" placeholder="enter username.." id="username1"  oninput="emailfun()" onkeypress="usernamefun()" >
+		
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="email">Email</label>
+			<input type="email" placeholder="enter Emailid..." id="email" oninput="emailfun()" onkeypress="emailfun()">
+			
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="number">Number</label>
+			<input type="text" placeholder="Enter number..." id="number" oninput="numberfun()" onkeypress="numberfun()">
+			
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="postalcode">Postal Code</label>
+			<input type="text" placeholder="enter postal code..." id="postalcode" oninput="postalcodefun()"  onkeypress="postalcodefun()">
+		
+			<small>Error message</small>
+		</div>
+		<button type="submit" >Submit</button>
+	</form>
+</div>
+
+
+
+
+<script type="text/javascript" src="RegistrationPageJS.js">
+
+</script>
+</body>
+</html>
