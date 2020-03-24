@@ -10,8 +10,8 @@
       color: darksalmon;
     }
     .container{
-    border-radius: 2px;
-    border-color: darksalmon;
+    border: 4px solid;
+      border-color: gray;
     }
     .button{
       background-color: darksalmon;
