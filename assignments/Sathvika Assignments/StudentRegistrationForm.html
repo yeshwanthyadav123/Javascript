@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Registration Form</title>
+        <script src="./StudentRegistrationForm.js"></script>
+        <link rel="stylesheet" type="text/css" href="StudentRegistrationForm.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body >
+<form onsubmit="submitValidation(event)">
+  <div align="center" class="container" >
+  <div class="images" >
+    <img src="https://bangaloreeducationservices.com/wp-content/uploads/2016/11/banner-student-groups2.jpg" alt="student" width="80%" height="30%">
+    <center><h1><u>Student Registration Form</u></h1></center>
+      </div>
+ <div class="rowdata">
+  <label for="fname">FirstName:</label>
+  <input type="text" id="fname" name="fname" placeholder="Enter First Name!" autocomplete="off"  onclick="firstNameValidation(event)" onkeypress="return firstNameValidation(event) " ><br>
+  <div  class="error" id="firstNameError"></div>
+</div><br>
+
+<div class="rowdata">
+  <label for="fname">LastName:</label>
+  <input type="text" id="lname" name="lname" placeholder="Enter Last Name!" autocomplete="off"  onclick="lastNameValidation(event)" onkeypress=" return lastNameValidation(event)" ><br>
+  <div  class="error" id="lastNameError"></div>
+</div><br>
+<div class="rowdata">
+  <label for="uname">UserName:</label>
+  <input type="text" id="uname" name="uname" placeholder="Enter User Name!" autocomplete="off"  onclick="userNameValidation()" oninput="userNameValidation()" ><br>
+  <div  class="error" id="userNameError"></div>
+</div><br>
+<div class="rowdata">
+  <label for="email">UserEmail:</label>
+  <input type="email" id="emailid" name="emailid" placeholder="Enter Email Id!" autocomplete="off"   onclick="emailValidation()" oninput="emailValidation()" ><br>
+  <div  class="error" id="emailError"></div>
+</div><br>
+<div class="rowdata">
+  <label for="phoneNumber" >UserMobile:</label>
+  <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number!" autocomplete="off"   onclick="phoneNumberValidation(event)" onkeypress=" return phoneNumberValidation(event)" ><br>
+  <div  class="error" id="phoneNumberError"></div>
+</div><br>
+<div class="rowdata">
+  <label for="postal" >PostalCode:</label>
+  <input type="text" id="postalCode" name="postalCode" placeholder="Enter Postal Code!" autocomplete="off"   onclick="postalValidation(event)" onkeypress="return postalValidation(event)" ><br>
+  <div  class="error" id="postalError"></div>
+</div><br>
+<div class="error" id="submitError"></div><br>
+
+<div class="rowdata">
+  <input  class="button" type="submit" id="submitButton" value="submit" ><br><br>
+</div>
+  </div>
+
+</form><br>
+
+</body>
+</html>
