@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    
+<body class="container-fluid">
+      <div class="jumbotron text-center">
+               <h1 style="color:blue   ">student registration</h1>
+                
+               </div>
+
+       <center>
+          
+    <form  name="studentregistration"  oninput="return studentRegistration()" onsubmit="return studentRegistration()">
+     
+       <div class="form-group">
+firstname  <input type="text"  id="firstname" autocomplete="off" maxlength="6"><br>
+            <p id="firstnameerr" style="color: red;"></p>
+           </div>
+        <div class="form-group">
+
+            lastname<input type="text" id="lastname"  autocomplete="off" maxlength="8" /><br>
+             <p id="lastnameerr" style="color: red;"></p>
+</div>
+            <div class="form-group">
+            username<input type="text" id="username"  autocomplete="off" maxlength="16"  /><br>
+                 <p id="usernameerr" style="color: red;"></p>
+ </div>
+                <div class="form-group">
+                email<input type="email" id="email"  autocomplete="off"/><br>
+                     <p id="emailerr" style="color: red;"></p>
+ </div>
+                    <div class="form-group">
+                    phonenumber<input type="text" id="phonenumber"  autocomplete="off" maxlength="10" onkeypress='return restrictAlphabets(event)' /><br>
+                         <p id="phonenumbererr" style="color: red;"></p>
+ </div>
+                        <div class="form-group">
+                        postalcode<input type="text" id="postalcode"   autocomplete="off" maxlength="6" onkeypress='return restrictAlphabets(event)' /><br>
+                             <p id="postalcodeerr" style="color: red;"></p>
+        
+                            </div>
+        
+<input type="submit" value="submit" onclick="return studentRegistration()">
+       
+        </form>
+</center>
+    <script src="studentregistration.js"> </script>
+    </body></html>
