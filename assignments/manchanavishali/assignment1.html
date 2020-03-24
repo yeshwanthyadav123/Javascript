@@ -1,0 +1,44 @@
+<html>
+    <body>
+    <table>
+            <p><u><b>Student Info</b></u></p>
+                    <tr>
+                        <th>rollno</th>
+                        <th>name</th>
+                        
+                    </tr>
+                    <tbody id="pp"></tbody>
+                </table>
+    </body>
+<script type="text/javascript">
+      var stu = [];
+    stu.push({rollno:1,name:'pranv'}); 
+    stu.push({rollno:2,name:'pranathi'});
+    stu.push({rollno:3,name:'prathi'});
+    stu.push({rollno:4,name:'adithya'});
+    stu.push({rollno:5,name:'prana'});
+    stu.push({rollno:7,name:'yuna'});
+    stu.push({rollno:8,name:'hitha'});
+    stu.push({rollno:9,name:'surya'});
+    stu.push({rollno:10,name:'berry'});
+    stu.push({rollno:11,name:'pranavi'}); 
+    stu.push({rollno:12,name:'pranathi'});
+    stu.push({rollno:13,name:'pratyusha'});
+    stu.push({rollno:14,name:'adithya'});
+    stu.push({rollno:15,name:'pradyumna'});
+    stu.push({rollno:17,name:'yamuna'});
+    stu.push({rollno:18,name:'haritha'});
+    stu.push({rollno:19,name:'surya'});
+    stu.push({rollno:20,name:'berry'});
+     var t='<body>';
+    for(i=0;i<stu.length;i++){
+               t+= '<tr>';
+                        t+= '<td>' + stu[i].rollno   +'</td>';
+                        t+= '<td>' + stu[i].name + '</td>';
+                        t+= '</tr>';
+  }
+    t+= '<body>';
+    document.getElementById('pp').innerHTML = t;
+
+    </script>
+    </html>
