@@ -1,0 +1,46 @@
+
+<html>
+    <body>
+    <table>
+            <p><u><b>Students Info</b></u></p>
+                    <tr>
+                        <th>Id</th>
+                        <th>name</th>
+                        
+                    </tr>
+                    <tbody id="pp"></tbody>
+                </table>
+    </body>
+<script type="text/javascript">
+      var stu = [];
+    stu.push({id:1,name:'salma'}); 
+    stu.push({id:2,name:'shaik'});
+    stu.push({id:3,name:'umme'});
+    stu.push({id:4,name:'banu'});
+    stu.push({id:5,name:'yaseen'});
+    stu.push({id:7,name:'alhumdilila'});
+    stu.push({id:8,name:'ayat'});
+    stu.push({id:9,name:'banno'});
+    stu.push({id:10,name:'iqbal'});
+    stu.push({id:11,name:'shabaz'}); 
+    stu.push({id:12,name:'yunus'});
+    stu.push({id:13,name:'huzaifa'});
+    stu.push({id:14,name:'ennaya'});
+    stu.push({id:15,name:'maqbul'});
+    stu.push({id:17,name:'sheza'});
+    stu.push({id:18,name:'shazfa'});
+    stu.push({id:19,name:'hayya'});
+    stu.push({id:20,name:'bukra'});
+     var t='<body>';
+    for(i=0;i<stu.length;i++){
+               t+= '<tr>';
+                        t+= '<td>' + stu[i].id   +'</td>';
+                        t+= '<td>' + stu[i].name + '</td>';
+                        t+= '</tr>';
+  }
+    t += '<body>';
+    document.getElementById('pp').innerHTML = t;
+
+    </script>
+    </html>
+
