@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form Validation</title>
+<link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+<form onsubmit="validsubmit(event)">
+    <h2>Student Registration Form</h2>
+    <div class="row">
+        <label>First Name</label>
+        <input type="text" id="firstname" onkeypress="return firstnamevalidity(event)" autocomplete="off">
+        <div class="error" id="fnameerror"></div>
+    </div>
+    <div class="row">
+        <label>Last Name</label>
+        <input type="text" id="lastname" maxlength="8"  onkeypress="return lastnamevalidity(event)"autocomplete="off">
+        <div class="error" id="lnameerror"></div>
+    </div>
+    <div class="row">
+        <label>User Name</label>
+        <input type="text" id="username" oninput="return usernamevalidity()" autocomplete="off">
+        <div class="error" id="unameerror"></div>
+    </div>
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" id="email" oninput="return ifEmailInValid()" autocomplete="off" >
+        <div class="error" id="emailerror"></div>
+    </div>
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" id="mobile" maxlength="10" onkeypress="return numberValidity(event)" autocomplete="off">
+        <div class="error" id="mobileerror"></div>
+    </div>
+    <div class="row">
+        <label>Postal Code</label>
+        <input type="text" id="postalcode" onkeypress="return postalcodeValidity(event)" autocomplete="off">
+        <div class="error" id="ziperror"></div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+     <script src="FormValidation.js"></script>
+</body>
+</html>                            
