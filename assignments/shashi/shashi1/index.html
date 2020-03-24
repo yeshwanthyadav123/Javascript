@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link rel='stylesheet' href='./style.css' type='text/css' />
+    <script src="./action.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+<body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <div class="container-fluid" style="  background-color: #bbf4f1;
+   height: 100;">
+    <center><h1 style="color:maroon">REGISTRATION</h1></center>
+    </div>
+    <div class="container-fluid" style="background-color: beige">
+    <center>
+<table border="1" >
+<tr>
+<td>
+<form name = "registerationform" action="./welcome.html" target="_blank" method="get" onsubmit="return(regvalidate())">
+<table>
+<tr>
+<td>First Name: </td> <td><input id="fnet" type = "text" name="fnametxt" placeholder="Your Firstname.." class="input" onkeypress="return(regvalidate(fnamevalidity())" autocomplete="off"/><font color='red'> <DIV id="fne"> </DIV> </font><br/></td>
+</tr>
+<tr>
+<td>Second Name: </td> <td> <input id="snet" type = "text" name="snametxt" placeholder="Your Lastname.." class="input" oninput="snamevalidity()" /><font color='red'> <DIV id="sne"> </DIV> </font><br/></td>
+</tr>
+<tr>
+<td> User Name:</td> <td><input id="unet" type = "text" name="unametxt" placeholder="Your Username.." class="input" oninput="unamevalidity()"/><font color='red'> <DIV id="mne"> </DIV> </font><br/> </td>
+</tr>
+<tr>
+<td>Email Address: </td> <td> <input id="enet" type = "text" name="emailtxt" placeholder="Your Email id.." class="input" oninput="emailValidity()" /><font color='red'> <DIV id="ene"> </DIV> </font><br/></td>
+</tr>
+<tr>
+<td> Phone : </td> <td> <input id="pnet" type = "text" name="phonetxt" placeholder="Your phoneno.." class="input" oninput="phoneValidity()" /><font color='red'> <DIV id="pne"> </DIV> </font> <br/> </td>
+</tr>
+<tr>
+<td>  PostalCode: </td> <td> <input id="pcnet" type = "text" name="pctxt" placeholder="Your postalcode.." class="input" oninput="pincodeValidity()"/><font color='red'> <DIV id="pcne"> </DIV> </font> <br/> </td>
+</tr>
+</table>
+<input class="button" type = "submit" value="Register Now" />
+</form>
+</td>
+</table>
+    </center>
+        </div>
+    <div class="container-fluid" style="background-color: cadetblue">
+    <center><h4 style="color: aliceblue">WELCOME TO OUR PAGE</h4></center>
+    </div>
+    </body>
+</html>
