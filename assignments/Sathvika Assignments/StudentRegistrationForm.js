@@ -155,7 +155,7 @@ function postalValidation(event4) {
             printError("postalError","Postal Code Should Be Of Exact 6 Digits!")
             postal = true;
             return postal;
-        } else if (postalcode.value.length == 6) {
+        } else if (postalcode.value.length == 5) {
             postalcode.style.borderColor = "green";
             printError("postalError"," ")
             postal = true;
