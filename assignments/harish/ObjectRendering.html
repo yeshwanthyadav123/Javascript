@@ -1,0 +1,30 @@
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js"></script>
+</head>
+<body>
+
+        <table border="5">
+            
+                    <tbody id="tableData"></tbody>
+        </table>
+                <script type="text/javascript">
+                    var Obj = 
+                        {
+                            name: "harish",
+                            age:  21,
+                            phone: "note7",
+                            sex:"male",
+                            qualification:"Btech",
+                            hobbies:"cricket"
+                        };
+                    var k = '<body>';
+                    var type = 'age';
+                            k+= '<td>' + Obj[type] + '</td>';
+                            k+='</body>';
+                            document.getElementById('tableData').innerHTML = k;
+                 </script>
+    </body>
+</html>

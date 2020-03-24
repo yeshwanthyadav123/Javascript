@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Form validation</title>
+<meta charset="utf-8">
+<link rel="stylesheet" src="./bootstrap.min.js"> 
+<script src="./FormValidationJS.js"></script>
+<link rel="stylesheet" type="text/css" href="./FormValidationCSS.css">
+</head>
+<body>
+<div class="container">
+     <form name="contactForm" onsubmit="return validateForm()" oninput="return validateForm()">
+    
+    <center>
+            <h2>REGISTRATION FORM</h2>
+    <div class="row" >
+        <label>First Name</label>
+        <input type="text" name="fname" placeholder=" Enter your First name.." maxlength="6" autocomplete="off">
+        <div class="error " style="color:crimson" id="fnameError"></div>
+    </div>
+    <div class="row">
+        <label>Last Name</label>
+        <input type="text" name="lname" placeholder=" Enter your last name.." minlength="2" maxlength="8" autocomplete="off">
+        <div class="error" style="color:crimson" id="lnameError" lname.style.backgroundcolor="crimson" ></div>
+    </div>
+    <div class="row">
+        <label>User Name</label>
+        <input type="text" name="uname" placeholder=" Enter your User Name.." >
+        <div class="error"style="color:crimson" id="unameError"></div>
+    </div>
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email" placeholder=" Enter your Email.."autocomplete="off">
+        <div class="error"style="color:crimson" id="emailError"></div>
+    </div>
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" placeholder=" Enter your Mobile Number.." maxlength="10" autocomplete="off">
+        <div class="error" style="color:crimson" id="mobileError"></div>
+    </div>
+    <div class="row">
+        <label>Postal Code</label>
+        <input type="text"  name="pcode"   font-family: cursive;
+        placeholder=" Enter your Postal Code.." maxlength="8" autocomplete="off">
+        <div class="error" style="color:crimson" id="pcodeError"></div>
+    </div>
+    
+    <div class="row">
+        <input type="submit"  value="Submit">
+    </div>
+    </center>
+</form>
+</div>
+</body>
+</html>
