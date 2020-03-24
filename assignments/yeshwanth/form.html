@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class="container">
+        <center>
+            <h2>Registration Form</h2>
+            <form onsubmit="Submit(event)">
+                <table>
+                    
+                    <tr>
+                        <td>FirstName:</td>
+                        <td><input type="text" id="firstname" onkeypress='return fnamevalidity(event)'/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="fname"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LastName :</td>
+                        <td><input type="text" id="lastname" onkeypress='return lnamevalidity (event)'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="lname"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UserName :</td>
+                        <td><input type="text" id="username" oninput="unamevalidity()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="uname"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" id="email" oninput="emailInValid()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="Email"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input type="text" id="mobile" onkeypress='return numberValidity(event)'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="mobile"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PostalCode:</td>
+                        <td><input type="text" id="pcode" onkeypress="return pcodeValidity(event)"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="pcode"></p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" id="submitButton" value="Submit" />
+            </form>
+            <br/>
+            <br/>
+            <h2 id="header"></h2>
+        </center>
+        <script src="js.js"></script>
+    </body>
+</html>
