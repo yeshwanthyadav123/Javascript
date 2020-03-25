@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Assignment 1</title>
+    </head>
+    <body style="background-color: darkkhaki;">
+        <h1><u><Center>Assignment 1 Student Data Table </Center></u></h1>
+    <table align="center" border="1" bgcolor="white" cellpadding="7">
+            
+    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                    </tr>
+                    <tbody id="objectTable"></tbody>
+                </table>
+    </body>
+<script type="text/javascript">
+
+     var students = [];
+    students.push({id:10,name:'sathvika',branch:'CSE',Year:'4th year'}); 
+    students.push({id:20,name:'keerthana',branch:'CSE',Year:'3rd year'}); 
+    students.push({id:30,name:'sushma',branch:'ECE',Year:'4th year'}); 
+    students.push({id:40,name:'vishali',branch:'Civil',Year:'3rd year'}); 
+    students.push({id:50,name:'pranavi',branch:'EEE',Year:'2nd year'}); 
+    students.push({id:60,name:'sreeja',branch:'ECE',Year:'4th year'}); 
+    students.push({id:70,name:'vaishnavi',branch:'EEE',Year:'1st year'}); 
+
+     var tag='<body>';
+    for(i=0;i<students.length;i++){
+               tag=tag+ '<tr>';
+                       tag =tag+ '<td>' + students[i].id   +'</td>';
+                       tag =tag+ '<td>' + students[i].name + '</td>';
+                        tag =tag+ '<td>' + students[i].branch  + '</td>';
+                        tag =tag+'<td>' + students[i].Year +'</td>'
+                        tag =tag+ '</tr>';
+  }
+    tag= tag +'<body>';
+    document.getElementById('objectTable').innerHTML = tag;
+
+    </script>
+    </html>
