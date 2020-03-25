@@ -1,49 +1,19 @@
 <html>
     <body>
-    <table>
-            
-                    <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Age</th>
-                    </tr>
-                    <tbody id="records"></tbody>
-                </table>
+        
+        <h1>Values</h1>
+        <table border="5">
+            <tbody id="header">
+        
+                </tbody>
+        </table>
+   <table border="5">
+        
+        <tbody id="records"> 
+     
+        
+       </tbody>
+        </table>
     </body>
-<script type="text/javascript">
-      var employees = [];
-    employees.push({id:100,name:'rahul',age:19}); 
-    employees.push({id:200,name:'shashi',age:20});
-    employees.push({id:300,name:'uthkarsh',age:21});
-    employees.push({id:400,name:'vikram',age:25});
-    employees.push({id:500,name:'aayush',age:22});
-    employees.push({id:600,name:'Mahesh',age:35});
-    employees.push({id:700,name:'suresh',age:35});
-    employees.push({id:800,name:'naresh',age:35});
-    employees.push({id:900,name:'ranjan',age:35});
-    employees.push({id:1000,name:'sumanth',age:35});
-    employees.push({id:1100,name:'sandeep',age:35});
-    employees.push({id:1200,name:'keerthi',age:35});
-    employees.push({id:1300,name:'ruchitha',age:35});
-    employees.push({id:1400,name:'divya',age:35});
-    employees.push({id:1500,name:'srihitha',age:35});
-    employees.push({id:1600,name:'Rajesh',age:35});
-    employees.push({id:1700,name:'Pranavi',age:35});
-    employees.push({id:1800,name:'Srija',age:35});
-    employees.push({id:1900,name:'Saalma',age:35});
-    employees.push({id:2000,name:'Bharath',age:35});
-    employees.push({id:2100,name:'Vishali',age:35});
-    employees.push({id:2200,name:'Vaishnavi',age:35});
-     var t='<body>';
-    for(i=0;i<employees.length;i++){
-               t+= '<tr>';
-                        t+= '<td>' + employees[i].id   +'</td>';
-                        t+= '<td>' + employees[i].name + '</td>';
-                        t+= '<td>' + employees[i].age  + '</td>';
-                        t+= '</tr>';
-  }
-    t += '<body>';
-    document.getElementById('records').innerHTML = t;
-
-    </script>
+<script type="text/javascript" src="objectref.js"></script>
     </html>
