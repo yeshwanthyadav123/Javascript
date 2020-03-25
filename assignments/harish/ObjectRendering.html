@@ -12,16 +12,28 @@
         </table>
                 <script type="text/javascript">
                     var Obj = 
-                        {
-                            name: "harish",
+                        {name: "harish",
                             age:  21,
                             phone: "note7",
+                            city:"hyderabad",
                             sex:"male",
+                            maritalStatus:"single",
                             qualification:"Btech",
-                            hobbies:"cricket"
+                            department:"ECE",
+                            yearofJoining:2016,
+                            yearofPassing:2020,
+                            school:"Narayana concept school",
+                            college:"st.peters engineering college",
+                            fatherName:"Ramesh",
+                            MotherName:"Sandhya",
+                            hobbies:"cricket",
+                            food:"Non-Veg",
+                            vehicle:"two-wheeler"
                         };
                     var k = '<body>';
-                    var type = 'age';
+                    var type = 'name';
+                    var type1 = 'age';
+                            k+= '<td>' + Obj[type] + '</td>';
                             k+= '<td>' + Obj[type] + '</td>';
                             k+='</body>';
                             document.getElementById('tableData').innerHTML = k;
