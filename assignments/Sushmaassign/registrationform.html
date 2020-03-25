@@ -1,0 +1,73 @@
+<html>
+<head>
+
+<title>Bootstrap </title>
+
+<script src="./Registrationform.js"></script>
+
+<link rel="stylesheet" type="text/css" href="registration.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+
+</head>
+<body style="background-color: pink;">
+<form>
+  <div class="form" align="center">
+    <center><h1 style="color: dark lavender">*<u>Registration Form</u>*</h1></center>
+  </div>
+  <br>
+  
+ <div class="container">
+  <label for="fname">FirstName:</label>
+  <input type="text" id="fname" name="fname" placeholder="Enter First Name" onclick="firstNameValidation()" oninput="firstNameValidation()" ><br>
+  <div  class="error" id="firstNameError"></div>
+</div><br>
+
+<div class="container">
+  <label for="fname">LastName:</label>
+  <input type="text" id="lname" name="lname" placeholder="Enter Last Name"  onclick="lastNameValidation()" oninput="lastNameValidation()" ><br>
+  <div  class="error" id="lastNameError"></div>
+</div><br>
+
+<div class="container">
+  <label for="uname">UserName:</label>
+  <input type="text" id="uname" name="uname" placeholder="Enter User Name" onclick="userNameValidation()" oninput="userNameValidation()" ><br>
+  <div  class="error" id="userNameError"></div>
+</div><br>
+
+<div class="container">
+  <label for="email">UserEmail:</label>
+  <input type="email" id="emailid" name="emailid" placeholder="Enter Email Id" onclick="emailValidation()" oninput="emailValidation()" ><br>
+  <div  class="error" id="emailError"></div>
+</div><br>
+
+<div class="container">
+  <label for="phoneNumber" >UserMobile:</label>
+  <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number "  onclick="phoneNumberValidation()" oninput="phoneNumberValidation()" ><br>
+  <div  class="error" id="phoneNumberError"></div>
+</div><br>
+<div class="container">
+  <label for="postal" >PostalCode:</label>
+  <input type="text" id="postalCode" name="postalCode" placeholder="Enter Postal Code"  onclick="postalValidation()" oninput="postalValidation()" ><br>
+  <div  class="error" id="postalError"></div>
+</div><br>
+
+  <center><input type="submit" value="Submit" onclick="submitValidation()"></center><br>
+
+  
+
+</form><br>
+
+
+
+</body>
+</html>
