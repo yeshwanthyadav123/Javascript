@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./Registration.css">
+    </head>
+    <body class="container-fluid">
+        <center>
+            <h2>REGISTRATION FORM</h2>
+            <form onsubmit="Submitvalidation(event)">
+                <table>
+                    
+                    <tr>
+                        <td>FirstName:</td>
+                        <td><input type="text" id="firstname" size="100" onkeypress='return firstnamevalidation(event)'/></td>
+                    </tr>
+                    <tr><br><br>
+                        <td colspan="2">
+                            <p id="firstnameMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LastName :</td>
+                        <td><input type="text" id="lastname" size="100" onkeypress='return lastnamevalidation(event)'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="lastnameMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UserName :</td>
+                        <td><input type="text" id="username" size="100" oninput="usernamevalidation()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="usernameMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" id="email" size="100" oninput="emailInValidation()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="EmailMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input type="text" id="mobilenumber" size="100" onkeypress='return mobilenumberValidation(event)'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="mobilenumberMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PostalCode:</td>
+                        <td><input type="text" id="postalcode" size="100" onkeypress="return postalcodeValidation(event)"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="postalcodeMessage"></p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" id="submitButton" value="Submit" />
+            </form>
+            <br/>
+            <br/>
+            <h2 id="header"></h2>
+        </center>
+        <script src="./validation.js"></script>
+    </body>
+</html>
