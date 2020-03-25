@@ -1,4 +1,4 @@
-<script>
+
 function emailInValid(){
     var b=false;
     var emailreg = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/; 
@@ -160,4 +160,3 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-</script>

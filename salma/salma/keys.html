@@ -1,0 +1,47 @@
+
+<html>
+    <body>
+    <table>
+            <p><u><b>Students Info</b></u></p>
+                    <tr>
+                        <th>Id</th>
+                        <th>name</th>
+                        <th>age</th>
+                    </tr>
+                    <tbody id="pp"></tbody>
+                </table>
+    </body>
+<script type="text/javascript">
+      var stu = [];
+    stu.push({id:1,name:'salma',age:21}); 
+    stu.push({id:2,name:'shaik',age:22});
+    stu.push({id:3,name:'umme',age:23});
+    stu.push({id:4,name:'banu',age:24});
+    stu.push({id:5,name:'yaseen',age:25});
+    stu.push({id:7,name:'alhumdilila',age:26});
+    stu.push({id:8,name:'ayat',age:14});
+    stu.push({id:9,name:'banno',age:15});
+    stu.push({id:10,name:'iqbal',age:12});
+    stu.push({id:11,name:'shabaz',age:29}); 
+    stu.push({id:12,name:'yunus',age:18});
+    stu.push({id:13,name:'huzaifa',age:22});
+    stu.push({id:14,name:'ennaya',age:15});
+    stu.push({id:15,name:'maqbul',age:19});
+    stu.push({id:17,name:'sheza',age:3});
+    stu.push({id:18,name:'shazfa',age:5});
+    stu.push({id:19,name:'hayya',age:6});
+    stu.push({id:20,name:'bukra',age:9});
+     var t='<body>';
+    for(i=0;i<stu.length;i++){
+               t+= '<tr>';
+                        t+= '<td>' + stu[i].id   +'</td>';
+                        t+= '<td>' + stu[i].name + '</td>';
+        t+= '<td>' + stu[i].age+ '</td>';
+                        t+= '</tr>';
+  }
+    t += '<body>';
+    document.getElementById('pp').innerHTML = t;
+
+    </script>
+    </html>
+
