@@ -1,0 +1,38 @@
+<html>
+    <body>
+    <table>
+            
+                    <tr>
+                        <th>NAME</th>
+                        <th>AGE</th>
+                        <th>DOB</th>
+                    </tr>
+                    <tbody id="tableData"></tbody>
+                </table>
+    </body>
+<script type="text/javascript">
+    //we can ask size and add for loop for taking values from user if needed
+var employees=[]
+ employees[0]={name:"Vaishnavi", age:22, DOB:"September 18,1998"}
+ employees[1]={name:"Vishali", age:20, DOB:"June 2, 2000"}
+ employees[2]={name:"bharath", age:68, DOB:"December 20, 1999"}
+ employees[3]={name:"Shashidhar", age:98, DOB:"April 30, 2000"}
+employees.push({name:'Gokul',age:10,DOB:"December 20, 2010"});
+    employees.push({name:'vivek',age:18,DOB:"December 20, 2002"});
+    employees.push({name:'vikram',age:12,DOB:"December 20, 2000"});
+    employees.push({name:'harish',age:12,DOB:"December 20, 2003"});
+    employees.push({name:'sailesh',age:12,DOB:"December 20, 2016"});
+    employees.push({name:'suresh',age:12,DOB:"December 20, 2002"});
+    employees.push({name:'mahesh',age:12,DOB:"December 20, 2002"});
+    var t='<body>';
+    for(i=0;i<employees.length;i++){
+               t+= '<tr>';
+                        t+= '<td>' + employees[i].name   +'</td>';
+                        t+= '<td>' + employees[i].age + '</td>';
+                        t+= '<td>' + employees[i].DOB  + '</td>';
+                        t+= '</tr>';
+  }
+    t += '<body>';
+    document.getElementById('tableData').innerHTML = t;
+    </script>
+    </html>
