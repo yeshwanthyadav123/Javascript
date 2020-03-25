@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Form validation</title>
+<meta charset="utf-8">
+<script src="./formvalidation.js"></script>
+<link rel="stylesheet" type="text/css" href="./formstyle.css">
+</head>
+<body style= "background-color:yellow">
+<div class="container">
+     <form name="contactForm" onsubmit="return validateForm()" oninput="return validateForm()">
+    
+    <center>
+            <h2><i>REGISTRATION FORM</i></h2>
+    <div class="row" >
+        <label><i>First Name</i></label>
+        <input type="text" name="fname" placeholder=" Enter your First name" title="enter 6 characters" >
+        <div class="demo "  id="fnamedemo"></div>
+    </div>
+    <div class="row">
+        <label><i>Last Name</i></label>
+        <input type="text" name="lname" placeholder=" Enter your last name" title="enter 2 to 8 characters" >
+        <div class="demo"  id="lnamedemo"  ></div>
+    </div>
+    <div class="row">
+        <label><i>User Name</i></label>
+        <input type="text" name="uname" placeholder=" Enter your User Name" title="enter upper and lower specialsymbol with 8 characters" >
+        <div class="demo" id="unamedemo"></div>
+    </div>
+    <div class="row">
+        <label><i>Email Address</i></label>
+        <input type="text" name="email" placeholder=" Enter your Email" title="enter valid email">
+        <div class="demo" id="emaildemo"></div>
+    </div>
+    <div class="row">
+        <label><i>Mobile Number</i></label>
+        <input type="text" name="mobile" placeholder=" Enter your Mobile Number" title="enter valid mobile no">
+        <div class="demo"  id="mobiledemo"></div>
+    </div>
+    <div class="row">
+        <label><i>Postal Code</i></label>
+        <input type="text"  name="pcode"  title="enter valid postal code"
+         placeholder=" Enter your Postal Code.." >
+        <div class="error"  id="pcodedemo"></div>
+    </div>
+    
+    <div class="row">
+        <input type="submit"  value="Submit">
+    </div>
+    </center>
+</form>
+</div>
+</body>
+</html>
