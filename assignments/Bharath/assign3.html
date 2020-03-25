@@ -1,0 +1,48 @@
+<html>
+<header>
+    <title> Json Assignment</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </header>
+    <body>
+        <div class="container">
+        <table class="table table-stripped">
+            <thead>
+            <th>user id</th>
+                <th>user name</th>
+                <th>name</th>
+                <th>pin code</th>
+                <th>phone</th>
+            </thead>
+        <tbody id="data"></tbody>
+        </table>
+            <input type="button" value="Delete">
+        </div>
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/users").then(
+        res=>{res.json().then(
+        data=>{
+            console.log(data);
+            if(data.length>0){
+                var temp="";
+                data.forEach((u)=>{
+                    temp+="<tr>";
+                    temp+="<td>"+u.id+"</td>";
+                    temp+="<td>"+u.username+"</td>";
+                    temp+="<td>"+u.name+"</td>";
+                    temp+="<td>"+u.address.zipcode+"</td>";
+                    temp+="<td>"+u.phone+"</td>"
+                    temp+="<td onclick='del(this.id)'>"+"delete"+"</td></tr>";
+                    
+                })
+                document.getElementById("data").innerHTML=temp;
+            }
+        }
+        )})
+        function del(i){
+            document.getElementById("data").deleteRow(i);
+        }
+       
+        </script>
+    
+    </body>
+</html>
