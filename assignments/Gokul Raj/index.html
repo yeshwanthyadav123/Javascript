@@ -1,267 +1,32 @@
-
 <html>
-<head>
-    <title>student registration form</title>
-    
-</head>
-<body>
-    <center>
-    <h1 style="background-color:#674FAD; color: white;font-family: monospace;align-items: center; text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;font-size:35px;"> Student Registration Form</h1></center>
-    
-<form name = "registerationform" onsubmit="return(validation())">
-<center>
-    <div style="background-color:whitesmoke;padding: 20px 20px 20px 20px;margin-left: 200px;margin-right: 200px;">
-<table  >
-    <tr>
-<div>
-<td  > <p style="color:black; font-weight:300;font-family:monospace;font-size:23px;" >First Name</p></td>
-<td> <input type="text" id="fname" name="firstname" placeholder="Your first name.. "style="margin: 10px 10px 8px 10px;padding-bottom: 10px;padding-right:20px;" pattern="[-'a-zA-Z]" required>
-    <div id="firstname" style="color: red; font-weight:100;font-family:monospace;font-size:15px; " >   </div>
-   
-    </td>
-
-</div>
-</tr>
-    
-    
-     <tr>
-<div>
-<td  > <p style="color:black; font-weight:300;font-family:monospace;font-size:23px;">Last Name</p></td>
-<td> <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="margin: 10px 10px 8px 10px;padding-bottom: 10px;padding-right:20px;" pattern="([A-Za-z]{2})" required>
-    <div id="lastname" style="color: red; font-weight:100;font-family:monospace;font-size:15px; ">   </div>
-    </td>
-
-</div>
-</tr>
-    
-     <tr>
-<div>
-<td  > <p style="color:black; font-weight:300;font-family:monospace;font-size:23px;" >User Name</p></td>
-<td><input type="text" id="uname" name="username" placeholder="Your user name.." style="margin: 10px 10px 8px 10px;padding-bottom: 10px;padding-right:20px;" pattern="(?=^.{6,10}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"required>
-    <div id="username" style="color: red; font-weight:100;font-family:monospace;font-size:15px; ">   </div>
-    </td>
-
-</div>
-</tr>
-    
-    
-    
-<tr>
-<div>
-<td><p style="color:black; font-weight:300;font-family:monospace;font-size:23px;">Email</p></td>
-<td><input type="text" id="eemail" name="email"  placeholder="Your mail id.." style="margin: 10px 10px 8px 10px;padding-bottom: 10px;padding-right:20px;" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required >
-    <div id="eeemail" style="color: red; font-weight:100;font-family:monospace;font-size:15px; ">   </div>
-    </td>
-    
-
-</div>
-</tr>
-    
-     <tr>
-<div>
-<td  > <p style="color:black; font-weight:300;font-family:monospace;font-size:23px;">Phone</p></td>
-<td><input type="text" id="mnumber" name="mnumber"  placeholder="Your mobile number.." style="margin: 10px 8px 20px 10px;padding-bottom: 10px;padding-right:20px;" pattern="^([9]{1})([234789]{1})([0-9]{8})$" required>
-    <div id="demo" style="color: red; font-weight:100;font-family:monospace;font-size:15px; ">   </div>
-    
-    </td>
-
-</div>
-</tr>
-    
-    
-    
-    
-<div>
-<tr>
-<td><p style="color:black; font-weight:300;font-family:monospace;font-size:23px; ">Pincode</p></td>
-<td><input type="text" id="pinnumber"  placeholder="Your pincode.."   style="margin: 5px 10px 8px 10px;padding-bottom: 10px;padding-right:20px;" pattern="([0-9]{6}|[0-9]{3}\s[0-9]{3})">
-    <div id="pin" style="color: red; font-weight:100;font-family:monospace;font-size:15px; " >   </div>
-    </td>
-   
-</tr>
-</div>
-
- </table>
-    </div>
-    </center>
-   
-    
-    
- <div id="eresult" style="color: red; font-display: block;"> </div>
-    <center>
-        
-<input type="submit" name="submit" value="Submit" onclick="validation()" style="background-color: #FF9D23; margin-top: 10px;margin-left: 35px;font-style: oblique;color: white;padding-left: 21px; padding-right: 21px;font-weight: bold;
-    line-height: 27px;
-    font-size: 12px;border-radius: 1px;
-   
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;">
-        </center>
-</form>
-    
-    
-        
-
-
-             
-             
-                    
-    
-            <center>
+    <body>
+    <table>
             
-         <div style="color: black; font-weight:100;font-family:monospace;font-size:15px;background-color: whitesmoke;width:25%; " >
-             <h5 id="gdisplay" style="color:black;"> </h5>
-              
-             <p  id="ldisplay" style="color:black;" >  </p> 
-             <p  id="udisplay" style="color:black;" >  </p> 
-             <p  id="mdisplay" style="color:black;" >  </p> 
-             <p  id="mobdisplay" style="color:black;" >  </p> 
-             <p  id="pdisplay" style="color:black;" >  </p> 
-             <h5 id="sdisplay" style="color:black;"> </h5>
-             <h5 id="waitdisplay" style="color: black;">  </h5>
-             
-    
-    </div>
-                </center>
-    
-    
-    
-    
-          
-             
-    
-    
-    
-     <div>
-		
-	<img src="sudimg/enquire-splash.png" style="margin-left: 200px;background-//color: #FFB340;margin-top: 15px;width:70%; ">
-		<div>
-			
-		
-	
-	</div>
-		</div>
-    
-    <script>
-        
-
-     function validation() {
-  var mob, text;
-
- 
-  mob = document.getElementById("mnumber").value;
-  var pin = document.getElementById("pinnumber").value;
-  var mail = document.getElementById("eemail").value;
-
-   var user = document.getElementById("uname").value;
-   var last=  document.getElementById("lname").value;
- var first =document.getElementById("fname").value;
-         var x = document.getElementById("fname").pattern;
-         var y = document.getElementById("lname").pattern;
-         var p = document.getElementById("pinnumber").pattern;
-  
-  if(mob.match(document.getElementById("mnumber").pattern)) {
-             text=" "
-             document.getElementById("demo").innerHTML=text;
-             document.getElementById("mobdisplay").innerHTML="Mobile No: " +mob;
-      
-     
-  } else {
-    text = "please enter a valid 10 digit phone number";
-       document.getElementById("demo").innerHTML = text;
-     
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tbody id="tableData"></tbody>
+                </table>
+    </body>
+<script type="text/javascript">
+      var Students = [];
+    Students.push({id:100,name:'Murari',age:21});
+    Students.push({id:101,name:'Gokul',age:25});
+    Students.push({id:103,name:'Vihari',age:21});
+    Students.push({id:102,name:'Ganesh',age:22});
+    Students.push({id:400,name:'Vikram',age:25});
+    Students.push({id:500,name:'Aayush',age:22});
+    Students.push({id:600,name:'Mahesh',age:35});
+    var t='<body>';
+    for(i=0;i<Students.length;i++){
+               t+= '<tr>';
+                        t+= '<td>' + Students[i].id   +'</td>';
+                        t+= '</tr>';
   }
-         if(mail.match(document.getElementById("eemail").pattern)) {
-            text=" "
-             document.getElementById("eeemail").innerHTML=text;
-              document.getElementById("mdisplay").innerHTML="Email Id: " +mail;
-     
-  } else {
-    text = "please enter valid email address ";
-       document.getElementById("eeemail").innerHTML = text;
-     
-  }
-         
-         
-         
-        
-     
-  
-         if(user.match(document.getElementById("uname").pattern)){
-              text=" "
-             document.getElementById("username").innerHTML=text;
-              document.getElementById("udisplay").innerHTML="User Id: " +user;
-            
-         }
-         else{
-             text="please enter one upper,lower,numeric and symbol with min 8 characters";
-               document.getElementById("username").innerHTML=text;
-         }
-          //if(last.match(document.getElementById("lname").pattern)){
-          if(lname.value.match(y) && last.length<=8){
-             text=" "
-             document.getElementById("lastname").innerHTML=text;
-               document.getElementById("gdisplay").innerHTML="Generating Id Card..";
-               //document.getElementById("ldisplay").innerHTML="Last Name: " +last;
-              setTimeout(() => {  document.getElementById("ldisplay").innerHTML="Full Name: " +first +" " +last; }, 2000);
-         }
-         else{
-             text="should atleast contain minimum(2-8) letters..";
-               document.getElementById("lastname").innerHTML=text;
-         }
-        // if(first.match(document.getElementById("fname").pattern) && (first.length>8) ){
-             
-             if(fname.value.match(x) && first.length==6){
-            text=" "
-             document.getElementById("firstname").innerHTML=text;
-            
-              //document.getElementById("gdisplay").innerHTML="Generating Id Card..";
-             //document.getElementById("fdisplay").innerHTML="First Name: " +first;
-             //setTimeout(() => {  document.getElementById("fdisplay").innerHTML="First Name: " +first; }, 2000);
-             
-         }
-         else{
-             text="should exactly contain 6 letters..";
-               document.getElementById("firstname").innerHTML=text;
-         }
-         
-          //if(first.length>8){
-             
-             // text="should only contain  letters..";
-              // document.getElementById("firstname").innerHTML=text;
-        // }
-       
-     //if(pin.match(document.getElementById("pinnumber").pattern)) {
-          if(pinnumber.value.match(p) && pin.length==6){
-            text=" "
-             document.getElementById("pin").innerHTML=text;
-            document.getElementById("pdisplay").innerHTML="Pin Number: " +pin;
-            setTimeout(() => {  document.getElementById("sdisplay").innerHTML="Join The Club..! " ; }, 2000);
-            //document.getElementById("sdisplay").innerHTML="Join The Club..! " ;
-            setTimeout(() => {  document.getElementById("waitdisplay").innerHTML="............................. " ; }, 10000);
-            
-            
-             
-     
-  } else {
-    text = "please enter 6 digits ";
-       document.getElementById("pin").innerHTML = text;
-        
-     }
-         
-         
-     }
-       
-     
-   
-        
-         
- 
-                 
-</script>
+    t += '<body>';
+    document.getElementById('tableData').innerHTML = t;
 
-</body>
-</html>
+    </script>
+    </html>
