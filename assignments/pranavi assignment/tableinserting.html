@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    
+</head>
+<style>
+input[type=button] {
+  background-color: pink;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text] {
+  border: 2px solid pink;
+  border-radius: 4px;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+</style>
+<body onload="load()">
+<center>
+<div id="form1">
+<h1 style="background-color:pink"> Student Form</h1>
+<form>
+<table>
+    <tr>
+        <td>FirstName:</td>
+        <td><input type="text" id="fname"></td>
+    </tr>
+    <tr>
+        <td>LastName:</td>
+        <td><input type="text" id="lname"></td>
+    </tr>
+    <tr>
+        <td>Number:</td>
+        <td><input type="text" id="number"></td>
+    </tr>
+    <tr>
+        <td>EmailId:</td>
+        <td><input type="text" id="emailid"></td>
+    </tr>
+    <tr>
+        <td>Branch:</td>
+        <td><input type="text" id="branch"></td>
+    </tr>
+    <tr>
+        <td>Age:</td>
+        <td><input type="text" id="age"></td>
+        
+    </tr>
+    <tr>
+        <td>Year:</td>
+        <td><input type="text" id="year"></td>
+        
+    </tr>
+    <tr>
+        <td>Marks:</td>
+        <td><input type="text" id="marks"></td>
+        
+    </tr>
+    <tr>
+        <td>Percentage:</td>
+        <td><input type="text" id="percentage"></td>
+        
+    </tr>
+  
+    <tr>
+        <td>TotalBacklogs:</td>
+        <td><input type="text" id="tBacklogs"></td>
+        
+    </tr>
+    <tr>
+        <td>ActiveBacklogs:</td>
+        <td><input type="text" id="aBacklogs"></td>
+        
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><input type="text" id="address"></td>
+        
+    </tr>
+    <tr>
+        <td>District:</td>
+        <td><input type="text" id="district"></td>
+        
+    </tr>
+    <tr>
+        <td>PinCode:</td>
+        <td><input type="text" id="pinCode"></td>
+        
+    </tr>
+    <tr>
+        <td>State:</td>
+        <td><input type="text" id="state"></td>
+        
+    </tr>
+    <tr>
+        <td>Country:</td>
+        <td><input type="text" id="country"></td>
+        
+    </tr>
+    <tr>
+        <td>Hobbies:</td>
+        <td><input type="text" id="hobbie"></td>
+        
+    </tr>
+    <tr>
+        <td>SportsData:</td>
+        <td><input type="text" id="sData"></td>
+        
+    </tr>
+    
+    
+    <tr>
+        <td><input type="button" id="add" value="Add" onclick="Javascript:addRow()"></td>&nbsp;
+        <td>&nbsp;</td>
+    </tr>
+
+   
+</table></form>
+</div>
+<div id="mydata">
+<table id="myTableData"  border="1" cellpadding="2">
+    <tr>
+        
+        <td><b>FirstName</b></td>
+        <td><b>LastName</b></td>
+        <td><b>Number</b></td>
+        <td><b>EmailId</b></td>
+        <td><b>Branch</b></td>
+        <td><b>Age</b></td>
+        <td><b>Year</b></td>
+        <td><b>Marks</b></td>
+        <td><b>Percentage</b></td>
+        <td><b>TotalBacklogs</b></td>
+        <td><b>ActiveBacklogs</b></td>
+        <td><b>Address</b></td>
+        <td><b>District</b></td>
+        <td><b>PinCode</b></td>
+        <td><b>State</b></td>
+        <td><b>Country</b></td>
+        <td><b>Hobbies</b></td>
+        <td><b>SportsData</b></td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+&nbsp;
+ 
+</div>
+</center>
+</body>
+<script>
+function addRow() {
+          
+    var myFName = document.getElementById("fname");
+    var myLName = document.getElementById("lname");
+    var mobile = document.getElementById("number");
+    var email = document.getElementById("emailid");
+    var branch = document.getElementById("branch");
+    var age = document.getElementById("age");
+    var year = document.getElementById("year");
+    var marks = document.getElementById("marks");
+    var percentage = document.getElementById("percentage");
+    var total = document.getElementById("tBacklogs");
+    var active = document.getElementById("aBacklogs");
+    var addr = document.getElementById("address");
+    var dist = document.getElementById("district");
+    var pin = document.getElementById("pinCode");
+    var state = document.getElementById("state");
+    var country = document.getElementById("country");
+    var hobbies = document.getElementById("hobbie");
+    var sports = document.getElementById("sData");
+    var table = document.getElementById("myTableData");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+   
+    row.insertCell(0).innerHTML= myFName.value;
+    row.insertCell(1).innerHTML= myLName.value;
+    row.insertCell(2).innerHTML= mobile.value;
+    row.insertCell(3).innerHTML= email.value;
+    row.insertCell(4).innerHTML= branch.value;
+    row.insertCell(5).innerHTML= age.value;
+    row.insertCell(6).innerHTML= year.value;
+    row.insertCell(7).innerHTML= marks.value;
+    row.insertCell(8).innerHTML= percentage.value;
+    row.insertCell(9).innerHTML= total.value;
+    row.insertCell(10).innerHTML= active.value;
+    row.insertCell(11).innerHTML= addr.value;
+    row.insertCell(12).innerHTML= dist.value;
+    row.insertCell(13).innerHTML= pin.value;
+    row.insertCell(14).innerHTML= state.value;
+    row.insertCell(15).innerHTML= country.value;
+    row.insertCell(16).innerHTML= hobbies.value;
+    row.insertCell(17).innerHTML= sports.value;
+    row.insertCell(18).innerHTML= myLName.value;
+    
+ 
+ 
+ 
+}
+ 
+
+ 
+
+ 
+function load() {
+    
+    console.log("Page load finished");
+ 
+}
+</script>
+</html>
