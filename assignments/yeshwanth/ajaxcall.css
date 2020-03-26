@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+    font: 15px;
+}
+table, th, td {
+    border: solid 3px;
+    text-align: center;
+}
+body{
+    background-color:slateblue;
+    font-family:  'Times New Roman', serif;
+}
