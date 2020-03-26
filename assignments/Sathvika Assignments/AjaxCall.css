@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    font: 15px;
+}
+table, th, td {
+    border: solid 1px;
+    text-align: center;
+}
+body{
+    background-color: bisque;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#deleteRow{
+    background-color: darkgrey;
+}
