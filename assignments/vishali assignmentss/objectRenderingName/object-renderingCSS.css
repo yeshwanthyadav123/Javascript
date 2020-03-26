@@ -1,0 +1,19 @@
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background-color: green;
+  color: white;
+}
+th {
+  height: 50px;
+}
+td {
+  height: 50px;
+}
+tr:hover {background-color: red;}
