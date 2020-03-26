@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Form validation</title>
+<meta charset="utf-8">
+<script src="./formvalidation.js"></script>
+<link rel="stylesheet" type="text/css" href="./formstyle.css">
+</head>
+<body style= "background-color:yellow">
+<div class="container">
+     <form name="contactForm" onsubmit="return validateForm()" oninput="return validateForm()">
+    
+    <center>
+            <h2><i>REGISTRATION FORM</i></h2>
+    <div class="row" >
+        <label><i>FirstName</i></label>
+        <input type="text" name="fname" placeholder=" Enter your First name" title="enter 6 characters" maxlength="6" autocomplete="off" required>
+        <div class="demo "  id="fnamedemo"></div>
+    </div>
+    <div class="row">
+        <label><i>LastName</i></label>
+        <input type="text" name="lname" placeholder=" Enter your last name" title="enter 2 to 8 characters" minlength="2" maxlength="8" autocomplete="off" required>
+        <div class="demo"  id="lnamedemo"  ></div>
+    </div>
+    <div class="row">
+        <label><i>UserName</i></label>
+        <input type="text" name="uname" placeholder=" Enter your User Name" title="enter upper and lower specialsymbol with 8 characters" required>
+        <div class="demo" id="unamedemo"></div>
+    </div>
+    <div class="row">
+        <label><i>EmailAddress</i></label>
+        <input type="text" name="email" placeholder=" Enter your Email" title="enter valid email" required >
+        <div class="demo" id="emaildemo"></div>
+    </div>
+    <div class="row">
+        <label><i>PhoneNumber</i></label>
+        <input type="text" name="mobile" placeholder=" Enter your Mobile Number" title="enter valid mobile no" maxlength="10" autocomplete="off" required>
+        <div class="demo"  id="mobiledemo"></div>
+    </div>
+    <div class="row">
+        <label><i>PostalCode</i></label>
+        <input type="text"  name="pcode"  title="enter valid postal code" placeholder=" Enter your Postal Code" maxlength="6" autocomplete="off" required >
+        <div class="error"  id="pcodedemo"></div>
+    </div>
+    
+    <div class="row">
+        <input type="submit"  value="Submit">
+    </div>
+    </center>
+</form>
+</div>
+</body>
+</html>
