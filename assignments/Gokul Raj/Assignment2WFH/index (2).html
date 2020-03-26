@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>student registration form</title>
+</head>
+<body>
+    <center>
+    <h1 style="background-color:#674FAD; color: white;font-style: oblique;align-items: center; text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;"> Student Registation Form</h1></center>
+    
+<form name = "registerationform" onsubmit="return(validation())">
+    
+<table >
+    <tr>
+<div>
+<td  > <p >First Name</p></td>
+<td><input type="text" name="fname" id="fname" placeholder="Enter your first name" class="input" required pattern="\S+.*">
+    <div id="fnameresult" style="color: red; font-display: block;">   </div>
+    </td>
+
+</div>
+</tr>
+    
+    
+     <tr>
+<div>
+<td  > <p >Last Name</p></td>
+<td><input type="text" name="lname" id="lname" placeholder="Enter your Last name" class="input" required pattern="\S+.*">
+    <div id="lnameresult" style="color: red; font-display: block;">   </div>
+    </td>
+
+</div>
+</tr>
+    
+     <tr>
+<div>
+<td  > <p >User Name</p></td>
+<td><input type="text" name="uname" id="uname" placeholder="Enter your User name" class="input" required pattern="\S+.*">
+    <div id="unameresult" style="color: red; font-display: block;">   </div>
+    </td>
+
+</div>
+</tr>
+    
+    
+    
+<tr>
+<div>
+<td><p>Email</p></td>
+<td><input type="email" name="email" id="email" placeholder="Enter Email ID" class="input" required pattern="\S+.*">
+    <div id="emailresult" style="color: red; font-display: block;">   </div>
+    </td>
+    
+
+</div>
+</tr>
+    
+     <tr>
+<div>
+<td  > <p >Phone</p></td>
+<td><input type="text" name="pname" id="pname" placeholder="Enter your Phone no" class="input" required pattern="\S+.*">
+    <div id="pnameresult" style="color: red; font-display: block;">   </div>
+    </td>
+
+</div>
+</tr>
+    
+    
+    
+    
+<div>
+<tr>
+<td><p>Postal</p></td>
+<td><input type="text" name="postal" id="postal" placeholder="Enter Postal code" class="input" required pattern="\S+.*">
+    <div id="postalesult" style="color: red; font-display: block;">   </div>
+    </td>
+   
+</tr>
+</div>
+
+ </table>
+    <font color='green'> <DIV id="final"> </DIV> </font>
+    
+    
+ <div id="eresult" style="color: red; font-display: block;"> </div>
+<input type="submit" name="submit" value="Submit" style="background-color: #FF9D23; margin-top: 10px;margin-left: 35px;font-style: oblique;color: white;padding-left: 21px; padding-right: 21px;font-weight: bold;
+    line-height: 27px;
+    font-size: 12px;border-radius: 1px;
+   
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;">
+</form>
+   
+<script type="text/javascript">
+ function validation()
+{
+   var rfname=document.registerationform.fname.value;
+    var fnameRGEX = /^[a-zA-Z]{6,}$/;
+    var fnameRes=fnameRGEX.test(rfname);
+    if(fnameRes==false){
+         document.getElementById('fnameresult').innerHTML = "First name  must be 6char ";
+         registerationform.fname.focus();
+        return false;
+    }
+     var rfsname=document.registerationform.lname.value;
+    var snameRGEX = /^[a-zA-Z]{2,8}$/;
+    var snameRes=snameRGEX.test(rfsname);
+    if(snameRes==false){
+         document.getElementById('lnameresult').innerHTML = "last name  must be 2-8char ";
+         registerationform.lname.focus();
+        return false;
+    }
+     var rfuname=document.registerationform.uname.value;
+    var unameRGEX = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+    var unameRes=snameRGEX.test(rfuname);
+    if(unameRes==false){
+         document.getElementById('unameresult').innerHTML = "Minimum 8 characters At least one uppercase characte one lower case one special char one digit ";
+         registerationform.uname.focus();
+        return false;
+    }
+     var rfename=document.registerationform.email.value;
+    var enameRGEX=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var enameRes=enameRGEX.test(rfename);
+    if(enameRes==false){
+        document.getElementById('emailresult').innerHTML="invalid email";
+        registerationform.email.focus();
+        return false;
+    }
+     var rfpnum=document.registerationform.pname.value;
+    var pnumRGEX = /^[0-9]{10}$/;
+    var pnumRes=pnumRGEX.test(rfpnum);
+    if(pnumRes==false){
+         document.getElementById('pnameresult').innerHTML = "10 digits required";
+         registerationform.pname.focus();
+        return false;
+    }
+     var rfpcnum=document.registerationform.postal.value;
+    var pcnumRGEX = /^[0-9]{8}$/;
+    var pcnumRes=pcnumRGEX.test(rfpcnum);
+    if(pnumRes==false){
+         document.getElementById('postalresult').innerHTML = "8 digits required";
+         registerationform.postal.focus();
+        return false;
+    }
+else
+   {
+       document.getElementById('eresult').innerHTML="DOCUMENT SUBMITED";
+       
+   return true;
+   }
+}  
+    
+    </script>    
+    
+    
+</body>  
+</html>
