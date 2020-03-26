@@ -1,0 +1,21 @@
+table, td, th {
+  border: 3px solid black;
+}
+
+table {
+	table-allign: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+	table-allign:center;
+  background-color: lavender;
+  color: white;
+}
+th {
+  height: 200px;
+}
+td {
+  height: 200px;
+}
+tr:hover {background-color: red;}
