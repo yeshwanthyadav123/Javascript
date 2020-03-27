@@ -1,0 +1,21 @@
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+padding: 2px 3px;
+text-align: center;
+}
+table {
+border-collapse: collapse;
+width: 100%;
+}
+td {
+height: 30px;
+vertical-align: bottom;
+}
+th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: rgb(158, 31, 137);
+color: white;
+}
