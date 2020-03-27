@@ -7,7 +7,18 @@ function fetchData(){
             {
                 var ObjectData=xmlhttp.response;
                 var parsedData=JSON.parse(ObjectData);
-                var columns = [];
+                getData(parsedData);
+            }
+            else if (xmlhttp.status == 400) {
+               alert('There was an error 400');
+            }
+        }
+    }
+    xmlhttp.open("GET","https://jsonplaceholder.typicode.com/users",true);
+    xmlhttp.send();
+}
+function getData(parsedData){
+var columns = [];
                 for (var rows = 0; rows < parsedData.length; rows++) {
                     var records = {};
                     records.Id = parsedData[rows].id;
@@ -54,14 +65,7 @@ function fetchData(){
                 var divContainer = document.getElementById("paragraph");
                 divContainer.innerHTML = "";
                 divContainer.appendChild(table); 
-            }
-            else if (xmlhttp.status == 400) {
-               alert('There was an error 400');
-            }
-        }
-    }
-    xmlhttp.open("GET","https://jsonplaceholder.typicode.com/users",true);
-    xmlhttp.send();
+
 }
 function removeRow(oButton) 
 {
