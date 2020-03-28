@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Ajax Calling</title>
+<link rel="stylesheet" type="text/css" href="AjaxDataFetch.css"> 
+    </head>
+<body onload="fetchData()">
+    <center><h1>Customer Details</h1></center>
+    <input type="text" id="search" oninput="search()" placeholder="Search for names..">
+    <p id="Data"></p>
+    <center>
+    <input type="submit" onclick="AddDetails()" value="Add Details" >
+    <div>
+        <form name="form" id="form" >
+           
+             <p id="p1">
+                <label>Full Name</label><input type="text" name="name" id="name"  placeholder=" Enter your Name.." autocomplete="off"/>
+            </p>
+            <p id="p2">
+                <label>Username</label><input type="text" name="uname" id="uname"  placeholder=" Enter your User Name.." autocomplete="off"/>
+            </p>
+            <p id="p3">
+                <label>City</label><input type="text" name="city" id="city" placeholder=" Enter your City.."autocomplete="off"/>
+            </p>
+            <p id="p4">
+                <label>zipcode</label><input type="text" name="zipcode" id="zipcode" placeholder=" Enter your Zipcode.." autocomplete="off" />
+            </p>
+            <p id="p5">
+                 <label>phoneNumber</label><input type="text" name="phonenumber" id="phoneNumber" placeholder=" Enter your Mobile Number.."autocomplete="off"  />
+
+            </p>
+            <p id="p6">
+                    <label>bs</label><input type="text" name="bs" id="bs" placeholder=" Enter bs.." autocomplete="off" />
+   
+               </p>
+            <br />
+            <input type="submit"   value="Submit" onclick="writeToPage(event)">
+
+        </form>
+    </div>
+    </center>
+    <script src="./AjaxDataFetch.js"></script>
+</body>
+</html>
