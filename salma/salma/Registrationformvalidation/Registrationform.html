@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="Registrationcss.css">
+<body>
+<div class="container">
+	<div class="header">
+		<h2>STUDENT REGISTRATION FORM</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="firstname">First Name</label>
+			
+			<input type="text" placeholder="enter first name.." id="firstname" oninput="return firstfunc(event,this)" onkeypress="return firstfunc(event,this)" name="firstname" autocomplete="off" >
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="lastname">Last Name</label>
+			
+			<input type="text" placeholder="enter lastname.." id="lastname" oninput="return lasttnamefunc(event,this)" onkeypress="return lasttnamefunc(event,this)"name="lastname" autocomplete="off" >
+			
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">User Name</label>
+			
+			<input type="text" placeholder="enter username.." id="username1"  oninput="usernamefunc()" onkeypress="usernamefunc()" name="username1" autocomplete="off" >
+		
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="email">Email Address</label>
+			<input type="email" placeholder="enter Emailid..." id="email" oninput="emailfunc()" onkeypress="emailfunc()" name="email" autocomplete="off" >
+			
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="number">Mobile Number</label>
+			<input type="text" placeholder="Enter number..." id="number" oninput="return numberfunc(event)" onkeypress="return numberfunc(event)" name="number" autocomplete="off">
+			
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="postalcode">Postal Code</label>
+			<input type="text" placeholder="enter postal code..." id="postalcode" oninput="return postalcodefunc(event)"  onkeypress="return postalcodefunc(event)" name="postalcode" autocomplete="off">
+		
+			<small>Error message</small>
+		</div>
+		<button type="submit" >Submit</button>
+	</form>
+</div>
+
+<script type="text/javascript" src="Registrationvalidation.js">
+
+</script>
+</body>
+</html>
