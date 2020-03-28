@@ -92,8 +92,8 @@ function newDataObject(e) {
         var Row = table.rows[i];
         var CellValue = Row.cells[0].innerHTML;
     }
-    let x = 1;
-    newObject.id = parseInt(CellValue) + x;
+
+    newObject.id = parseInt(CellValue) + 1;
     newObject.name = document.getElementById('inputName').value;
     newObject.username = document.getElementById('inputUserName').value;
     newObject.city = document.getElementById('inputCity').value;
