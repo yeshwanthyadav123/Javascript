@@ -1,0 +1,14 @@
+.container{
+    text-align: center;
+}
+table {
+            width: 50%;
+            font: 20px;
+        }
+
+table, th, td {
+    padding: 3px;
+    border: solid;
+    text-align: center;
+}
+       
