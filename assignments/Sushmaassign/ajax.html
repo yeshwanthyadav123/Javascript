@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ajax.css" />
+</head>
+
+<body align="center">
+    <input type="button" id="fetchButton" value="Fetch Data" onclick="fetchData()" />
+    <p id="search"></p>
+    <p id="paragraph" align="center"></p>
+    <p id=searchData align="center"></p>
+    <p id="addButton"></p>
+    <div id="addForm" class="addForm" align="center">
+        <form onsubmit="Submitvalidate(event)">
+            <h3>Enter Details to Add to JSON DataTable</h3>
+            <table id="newFormTable">
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" id="Name" onkeypress="return nameValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="NameMessage"></td>
+                </tr>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" id="UserName" onkeypress="return UsernameValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="UserNameMessage"></td>
+                </tr>
+                <tr>
+                    <td>City :</td>
+                    <td><input type="text" id="City" onkeypress="return CityValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="CityMessage"></td>
+                </tr>
+                <tr>
+                    <td>ZipCode :</td>
+                    <td><input type="text" id="ZCode" onkeypress="return ZCodeValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="ZCodeMessage"></td>
+                </tr>
+                <tr>
+                    <td>Phone :</td>
+                    <td><input type="text" id="Phone" onkeypress="return PhoneValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="PhoneMessage"></td>
+                </tr>
+                <tr>
+                    <td>BS:</td>
+                    <td><input type="text" id="Bs" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="BsMessage"></td>
+                </tr>
+            </table>
+            <input type="submit" id="submitButton" value="Submit" />
+        </form>
+    </div>
+    <script src="ajax.js"></script>
+</body>
+
+</html>
