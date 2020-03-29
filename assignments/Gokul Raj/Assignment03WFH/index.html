@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body align="center" onload="fetchData()">
+    <p id="search"></p>
+    <p id="para" align="center"></p>
+    <p id=searchData align="center"></p>
+    <p id="addButton"></p>
+    <div id="addForm" class="addForm" align="center">
+        <form onsubmit="Submitvalidate(event)">
+            <h3>Enter Details to Add to Table List</h3>
+            <table id="newFormTable">
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" id="inputName" onkeypress="return validateName(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="NameMessage"></td>
+                </tr>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" id="inputUserName" onkeypress="return validateUserName(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="UserNameMessage"></td>
+                </tr>
+                <tr>
+                    <td>City :</td>
+                    <td><input type="text" id="inputCity" onkeypress="return validateCity(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="CityMessage"></td>
+                </tr>
+                <tr>
+                    <td>ZipCode :</td>
+                    <td><input type="text" id="inputZCode" onkeypress="return validateZipcode(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="ZCodeMessage"></td>
+                </tr>
+                <tr>
+                    <td>Phone :</td>
+                    <td><input type="text" id="inputPhone" onkeypress="return validatePhoneNumber(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="PhoneMessage"></td>
+                </tr>
+                <tr>
+                    <td>BS :</td>
+                    <td><input type="text" id="inputBs" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="BsMessage"></td>
+                </tr>
+            </table>
+            <input type="submit" id="submitButton" value="Submit" />
+        </form>
+    </div>
+    <script src="./validate.js"></script>
+</body>
+
+</html>
