@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  
+	<link rel="stylesheet" href="ajaxcss.css">
+</head>
+<body  align="center">
+<h2>The XMLHttpRequest Object</h2>
+     
+     <button type="button" onclick="loadDoc()">Request data</button>
+
+    <div class="container">
+    <p id="search"></p>
+    <p id="demo" align="center"></p>
+    <p id=searchData align="center"></p>
+    <p id="addButton"></p>
+    <div id="addForm" class="addForm" align="center">
+        <form onsubmit="Submitvalidate(event)">
+            <h3>Enter Details to  add into Table</h3>
+            <table id="newFormTable">
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" id="inputName" onkeypress="return nameValidation(event)" name="inputname" autocomplete="off"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="NameMessage"></td>
+                </tr>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" id="inputUserName" onkeypress="return UsernameValidation(event)" name="inputUserName" autocomplete="off"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="UserNameMessage"></td>
+                </tr>
+                <tr>
+                    <td>City :</td>
+                    <td><input type="text" id="inputCity" onkeypress="return CityValidation(event)" name="inputCity" autocomplete="off" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="CityMessage"></td>
+                </tr>
+                <tr>
+                    <td>ZipCode :</td>
+                    <td><input type="text" id="inputZCode" onkeypress="return ZCodeValidation(event)"  name="inputZCode" autocomplete="off"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="ZCodeMessage"></td>
+                </tr>
+                <tr>
+                    <td>Phone :</td>
+                    <td><input type="text" id="inputPhone" onkeypress="return PhoneValidation(event)" name="inputPhone" autocomplete="off" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="PhoneMessage"></td>
+                </tr>
+                <tr>
+                    <td>BS :</td>
+                    <td><input type="text" id="inputBs"  name="inputBs" autocomplete="off"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="BsMessage"></td>
+                </tr>
+            </table>
+            <input type="submit" id="submitButton" value="Submit" />
+        </form>
+    </div>
+	<script type="text/javascript" src="Ajaxcall.js"></script>
+</body>
+
+</html>
