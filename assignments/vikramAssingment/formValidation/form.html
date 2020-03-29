@@ -1,0 +1,128 @@
+<html>
+    <head>
+	<style>
+	.container{
+    background-color: lightblue;
+}
+h2{
+    margin-top: 50px;
+    color: green;
+}
+input[type=text], select {
+  width: 100%;
+  height: 35px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  height: 35px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+table{
+  width: 500px;
+}
+td{
+  text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+#submitButton{
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+td p{
+  text-align: center;
+  color: red;
+  font-size: 16px;;
+}
+</style>
+	
+    </head>
+    <body class="container">
+        <center>
+            <h2>Registration Form</h2>
+            <form onsubmit="Submitvalidate(event)">
+                <table>
+                    
+                    <tr>
+                        <td>FirstName:</td>
+                        <td><input type="text" id="fname" onkeypress='return fnamevalidity(event)'/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="fnameMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LastName :</td>
+                        <td><input type="text" id="lname" onkeypress='return lnamevalidity (event)'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="lnameMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UserName :</td>
+                        <td><input type="text" id="uname" oninput="unamevalidity()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="unameMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" id="email" oninput="emailInValid()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="EmailMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input type="text" id="mobile" onkeypress='return numberValidity(event)'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="MNumberMessage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PostalCode:</td>
+                        <td><input type="text" id="pcode" onkeypress="return pcodeValidity(event)"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="PcodeMessage"></p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" id="submitButton" value="Submit" />
+            </form>
+            <br/>
+            <br/>
+            <h2 id="header"></h2>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>
