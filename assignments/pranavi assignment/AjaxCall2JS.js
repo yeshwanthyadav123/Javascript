@@ -9,13 +9,13 @@ function fetchData() {
                 var col = [];
                 for (var i = 0; i < obj.length; i++) {
                     var rec = {};
-                    rec.id = obj[i].id;
-                    rec.name = obj[i].name;
-                    rec.username = obj[i].username;
-                    rec.city = obj[i].address.city;
-                    rec.zipcode = obj[i].address.zipcode;
-                    rec.phone = obj[i].phone;
-                    rec.bs = obj[i].company.bs;
+                    rec.Id = obj[i].id;
+                    rec.Name = obj[i].name;
+                    rec.Username = obj[i].username;
+                    rec.City = obj[i].address.city;
+                    rec.Zipcode = obj[i].address.zipcode;
+                    rec.Phone = obj[i].phone;
+                    rec.Bs = obj[i].company.bs;
                     col.push(rec);
                 }
                 var SearchBox = document.createElement('input');
