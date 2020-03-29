@@ -7,6 +7,50 @@
     </head>
 <body onload="load()">
     <center><h1><u>JSON Data</u></h1></center>
-    <p id="paragraph"></p>
+    <p id="search"></p>
+    <p id="paragraph" align="center"></p>
+    <p id="addNewRow" align="center"></p>
+    
+    <div id="addForm" align="center" class="addForm" >
+        <form onsubmit="submitValidation(event)">
+        <h2><u>Enter Data Into JSON Table</u></h2>
+        <div class="rowdata">
+            <label for="name">FullName:</label>
+            <input class="data" type="text" id="name" name="name" placeholder="Enter Name!" autocomplete="off"  onclick="nameValidation()" onkeypress="nameValidation()"  ><br>
+            <div  class="error" id="nameError"></div>
+        </div><br>
+          <div class="rowdata">
+            <label for="uname">UserName:</label>
+            <input class="data" type="text" id="uname" name="uname" placeholder="Enter User Name!" autocomplete="off"  onclick="userNameValidation()"  onkeypress="userNameValidation()"><br>
+            <div  class="error" id="userNameError"></div>
+          </div><br>
+          <div class="rowdata">
+            <label for="city">City:</label>
+            <input class="data" type="text" id="city" name="city" placeholder="Enter City!" autocomplete="off"   onclick="cityValidation()" onkeypress="cityValidation()" ><br>
+            <div  class="error" id="cityError"></div>
+          </div><br>
+          <div class="rowdata">
+            <label for="postal" >PostalCode:</label>
+            <input class="data" type="text" id="postalCode" name="postalCode" placeholder="Enter Postal Code!" autocomplete="off"   onclick="postalValidation()" onkeypress=" postalValidation()" ><br>
+            <div  class="error" id="postalError"></div>
+          </div><br>
+          <div class="rowdata">
+            <label for="phone" >PhoneNumber:</label>
+            <input class="data" type="text" id="phone" name="phone" placeholder="Enter Phone Number!" autocomplete="off"   onclick="phoneValidation()" onkeypress="phoneValidation()" ><br>
+            <div  class="error" id="phoneError"></div>
+          </div><br>
+          <div class="rowdata">
+            <label for="bs" >BS:</label>
+            <input class="data" type="text" id="bs" name="bs" placeholder="Enter BS!" autocomplete="off"   onclick="bsValidation()" onkeypress="  bsValidation()" ><br>
+            <div  class="error" id="bsError"></div>
+          </div><br>
+          
+          <div class="rowdata">
+              <center>
+  <input   class="button" type="submit" id="submitButton" value="submit" ></center><br><br>
+</div>
+    </div>
+</form><br>
+
 </body>
 </html>
