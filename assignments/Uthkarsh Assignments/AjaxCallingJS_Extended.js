@@ -128,6 +128,7 @@ function removeRow(OnButtonClick) {
 }
 
 function SearchInput() {
+    let found;
     let inputData = document.getElementById('searchInput').value;
     if (inputData) {
         inputData = inputData.toLowerCase();
