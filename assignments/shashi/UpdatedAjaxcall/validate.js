@@ -89,7 +89,7 @@ function AddRow() {
     }
 }
 
-function newDataObject(e) {
+function inputDatafields(e) {
     var inputData = {};
     let table = document.getElementById("myTable");
     for (var i = 1; i < table.rows.length; i++) {
@@ -244,6 +244,6 @@ function validateOnSubmit(event) {
     if ((validateName(event) || validateUserName(event) || validateCity(event) || validateZipcode(event) || validatePhoneNumber(event) || BsValidation()) != true) {
         event.preventDefault();
     } else if ((validateName(event) && validateUserName(event) && validateCity(event) && validateZipcode(event) && validatePhoneNumber(event) && BsValidation()) == true) {
-        newDataObject(event);
+        inputDatafields(event);
     }
 }
