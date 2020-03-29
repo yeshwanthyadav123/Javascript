@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        table {
+            width: 50%;
+            font: 20px;
+        }
+        table, th, td {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p><input type="button" value="FetchData" onclick="fetchData()" style="align-self: center;" />
+        <input type="text" placeholder="search by username...">
+        <p id="paragraph"></p>
+    <button id="ShowForm">Show</button>
+    <button id="HideForm">Hide</button>
+        <script src="ajaxcalls.js"></script>
+</body>
+<form id="sform" onsubmit="formvalues(event)">
+    <h2>Student Registration Form</h2>
+    <div class="row">
+        <label>Id</label>
+        <input type="text" id="Id" autocomplete="off">
+    </div>
+    <div class="row">
+        <label>Name</label>
+        <input type="text" id="name" autocomplete="off">      
+    </div>
+    <div class="row">
+        <label>UserName</label>
+        <input type="text" id="username" autocomplete="off">      
+    </div>
+    <div class="row">
+        <label>City</label>
+        <input type="text" id="city" autocomplete="off">      
+    </div>
+    <div class="row">
+        <label>Postal Code</label>
+        <input type="text" id="pcode" autocomplete="off">     
+    </div>
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" id="mnumber" autocomplete="off">
+    </div>
+    <div class="row">
+        <label>BS</label>
+        <input type="text" id="bs" autocomplete="off">
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</html>
