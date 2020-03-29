@@ -13,3 +13,24 @@ body{
 #deleteRow{
     background-color: darkgrey;
 }
+#addRows{
+  background-color: darkgray;
+}
+#searchDataButton{
+    background-color: darkgray;
+}
+#searchData{
+background-color: lightgreen;
+}
+.error{
+    color: red;
+}
+label {float: left; width: 1em; text-align: right;margin: 0px 89px 10px 525px;}
+   .data{
+    text-align: left; margin:0px 514px 10px 10px;
+    background-color: lightgreen;
+   }
+    .button{
+        margin: 0px 10px 10px 10px;
+        background-color: darkgray;
+    }
