@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          table {
+  font-family: bold;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th,tr,td {
+  border: 1px solid red;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lighter;
+}
+input[type=button] {
+    margin: 10px 10px 10px 10px;
+    font-family: bold;
+    background-color:green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+input[type=button]:hover {
+  background-color:crimson;
+}
+h1{
+    background-color: #66c7ee;
+    border: 1px solid black;
+
+}
+#search {
+  font-family: bold;
+    width: 20%;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+ form{
+  display: none;
+  background-color:whitesmoke;
+  width: 50%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  border: 2px solid black;
+  font-family: b;
+  margin: 8px;
+  box-sizing: border-box;
+  all:center
+} 
+input[type=submit]:hover {
+  background-color: mediumseagreen;
+  font-family: bold;
+}
+input[type=submit] {
+  background-color:#66c7ee;
+  color:black;
+  padding: 12px 100px;
+  border: none;
+  border-radius: 4px;
+  font-family: bold;
+  cursor: pointer;
+}
+input[type=text] {
+    font-family: bold;
+}
+    </style>
+</head>
+<body align="left">
+    
+    <p><input type="button" value="FetchData" onclick="fetchData()"/>
+	  <p id="result"></p>
+	      <input type="text" id="searchInput" oninput="search()" placeholder="Search for names..">
+		      <p id="Data"></p>
+	    <center><h1>Customer Details</h1></center>
+
+    <center>
+    <input type="submit" onclick="AddDetails()" value="Add Details" >
+    <div>
+        <form name="form" id="form" >
+           
+             <p id="p1">
+                <label>Full Name</label><input type="text" name="name" id="name"  autocomplete="off"/>
+            </p>
+            <p id="p2">
+                <label>Username</label><input type="text" name="uname" id="uname"  autocomplete="off"/>
+            </p>
+            <p id="p3">
+                <label>City</label><input type="text" name="city" id="city" autocomplete="off"/>
+            </p>
+            <p id="p4">
+                <label>zipcode</label><input type="text" name="zipcode" id="zipcode" autocomplete="off" />
+            </p>
+            <p id="p5">
+                 <label>phoneNumber</label><input type="text" name="phonenumber" id="phoneNumber" autocomplete="off"  />
+
+            </p>
+            <p id="p6">
+                    <label>bs</label><input type="text" name="bs" id="bs"  autocomplete="off" />
+   
+               </p>
+            <br />
+            <input type="submit"   value="Submit" onclick="writeToPage(event)">
+        <script src="script.js"></script>
+</body>
