@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+       
+        table, th, td {
+            border: solid 5px ;
+           font-family:serif;   
+        
+            text-align: center;
+        }
+    </style>
+</head>
+    <body class="container" onload="fetchData()">
+        <center>
+        <h1>Fetched data list</h1> 
+        
+        <p id="data"></p>
+             <p id="search"></p>
+          <p id=searchData align="center"></p>
+    <p id="addButton"></p>
+            <div id="addForm"  >
+        <form onsubmit="Submitvalidate(event)">
+            <h3>Enter Details to Add to JSON DataTable</h3>
+            <table id="newFormTable">
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" id="Name" onkeypress="return nameValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="NameMessage"></td>
+                </tr>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" id="UserName" onkeypress="return UsernameValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="UserNameMessage"></td>
+                </tr>
+                <tr>
+                    <td>City :</td>
+                    <td><input type="text" id="City" onkeypress="return CityValidation(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="CityMessage"></td>
+                </tr>
+                <tr>
+                    <td>postal code:</td>
+                    <td><input type="text" id="ZCode" onkeypress="return ZCodeValidation(event)"  autocomplete="off" maxlength="6" onkeypress="return restrictAlphabets(event)"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="ZCodeMessage"></td>
+                </tr>
+                <tr>
+                    <td>Phone :</td>
+                    <td><input type="text" id="Phone" onkeypress="return PhoneValidation(event)" autocomplete="off" maxlength="10" onkeypress="return restrictAlphabets(event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="PhoneMessage"></td>
+                </tr>
+                <tr>
+                    <td>BS :</td>
+                    <td><input type="text" id="Bs" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="BsMessage"></td>
+                </tr>
+            </table>
+            <input type="submit" id="submitButton" value="Submit" />
+        </form>
+    </div>
+            
+            </center>
+         <script src="./fetchdata.js"></script>
+    </body>
+</html>
+
