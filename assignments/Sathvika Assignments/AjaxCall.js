@@ -1,3 +1,4 @@
+  
 function load(){
     var xmlhttp=new XMLHttpRequest();
     
@@ -36,7 +37,7 @@ function load(){
                 var table=document.createElement("table");
                 table.setAttribute("id","tableData");
                 var tablerow=table.insertRow(-1);
-                var headerKeys = Object.keys(columns[0])
+                var headerKeys = Object.keys(columns[0]);
                 var tablehead = document.createElement("th");
                 tablehead.innerHTML="DeleteAction";
                 tablerow.appendChild(tablehead);
@@ -142,7 +143,7 @@ function SearchData() {
             var td = rows[i].getElementsByTagName("td");
             for (j = 0; j < td.length; j++) {
                 if (td[j].innerHTML.toLowerCase().indexOf(inputData) > -1) {
-                    found = true;
+                     var found = true;
                 }
             }
             if (found) {
