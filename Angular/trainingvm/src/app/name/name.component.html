@@ -1,0 +1,18 @@
+<ul>
+    <li *ngFor="let name of names; let i = index">
+        <span *ngIf="i ===1; else elsePart">
+            {{ name | uppercase}} 
+        </span>
+        <ng-template #elsePart>
+            <p> {{name | lowercase}} {{ i }}</p>
+        </ng-template>
+    </li>
+</ul>
+
+{{names | json}}
+
+{{currentDate | date : 'dd-MMM-yyyy'}}
+
+{{salary | currency : 'INR'}}
+<!-- [ngStyle]= "{'border': '1px solid'}" -->
+<button (click)="updateBack()">Update</button>

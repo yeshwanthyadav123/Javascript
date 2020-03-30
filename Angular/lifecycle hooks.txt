@@ -1,0 +1,17 @@
+constructor----- first will be called (its not related to component life cycle hook)
+
+ngonchanges ---- whenever there is change in INPUT properties
+ngonit ---- initializes the component
+ngdocheck ----- whenever there is change in data (properties)
+ngcontentinit ---- initializes when the external component loads
+ngcontentchecked --- called after external content loading completes
+ngafterviewinit ---- initializes when current component view initialzed
+ngafterviewchecked ---- called after current view loading
+ngondestroy ---- destroys the component
+
+
+if ther is change in properties
+
+ngdocheck
+ngcontentchecked
+ngafterviewchecked

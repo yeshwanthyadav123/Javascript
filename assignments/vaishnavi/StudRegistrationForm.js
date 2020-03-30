@@ -1,4 +1,4 @@
-<script type="text/javascript">
+{/* <script type="text/javascript"> */}
 function printError(elemId, hintMsg) {
 
     document.getElementById(elemId).innerHTML = hintMsg;
@@ -111,4 +111,4 @@ function validateForm() {
         alert(dataPreview);
     
 };
-</script>
+{/* </script> */}
