@@ -1,0 +1,44 @@
+@import url(https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css);
+#shashi{
+    display:none;
+}
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+.fstyle{
+    width: 600px;
+    height: 800px;
+    margin-top: 300px;
+    margin-left: 200px;
+    border-style: solid;
+    padding: 30px;
+    background-color: bisque;
+}
+.but{
+    padding: 20px;
+}
+.symbspace{
+    width:500px;
+    height:30px;
+    background-color: aquamarine;
+    border: 1px solid gray;
+    border-style: dotted;
+}
+.symbol{
+    float: left;
+    font-size: 15px;
+    margin-left: 50px;
+    color: cornflowerblue;
+}
+span.btn.btn-danger
+{
+    margin-top: 29px;
+}
+.inputspace{
+    margin-top: 20px;
+    padding: 20px;
+}

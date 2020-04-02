@@ -1,0 +1,41 @@
+
+<form class="fstyle" (ngSubmit)="onsubmit()">
+    <div class="form-group">
+    <label for="firstName">Enter Question</label>
+    <input id="firstName" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="purpose">purpose</label> 
+        <textarea id="comment" cols="20" rows="5" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="random">Are you 18+</label>
+        <br>
+        <input id="random" type="checkbox" class="but">
+    </div>
+   
+    <div class="symbspace">
+
+            <button class="symbol" (click)="addForm()"><strong>&#43;</strong></button>
+            <button class="symbol" ><strong>&#8593;</strong></button>
+            <button class="symbol" ><strong>&#8595;</strong></button>
+        
+         </div>
+         
+        <div class="inputspace">
+        <tr *ngFor="let obj of dataarray; let i=index">
+            <td>
+                <input [(ngModel)]="obj.input" [ngModelOptions]="{standalone: true}" class="form-control" type="text" name="{{obj.input}}" >
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="removeForm(i)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input [(ngModel)]="name.input" [ngModelOptions]="{standalone: true}" class="form-control" type="text" name="nameinput" > 
+            </td>
+        </tr>
+    </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>

@@ -1,0 +1,42 @@
+
+#myDIV {
+    height: 300;
+    display: none;
+    width: 60%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+.headbar{
+    width:100%;
+    height:60px;
+    background-color: darkgreen;
+    
+}
+.headtext{
+    text-align: center;
+    color: antiquewhite;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding: 2px;
+}
+.sidebar{
+    width: 200px;
+    height: 250px;
+    background-color: darkgreen;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.data{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:1px solid white;
+    border-style: solid;
+    padding: 10px;
+    color:red;
+    cursor: pointer;
+}
+a{
+  color:inherit;
+  text-decoration: none;  
+}
