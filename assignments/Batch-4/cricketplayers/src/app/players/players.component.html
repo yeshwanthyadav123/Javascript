@@ -1,0 +1,10 @@
+<h2 style="color: darkblue;">Playing cricketer names</h2>
+<ul class="players">
+  
+  <li *ngFor="let player of players"
+    [class.selected]="player === selectedplayer"
+    (click)="onSelect(player)">
+    <span class="badge">{{player.id}}</span> {{player.name}}
+  </li>
+</ul>
+<app-playerdetails [player]="selectedplayer"></app-playerdetails>

@@ -1,0 +1,30 @@
+
+<!-- <div *ngIf="selectedplayer">
+
+    <h2>{{selectedplayer.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedplayer.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="selectedplayer.name" placeholder="name"/>
+      </label>
+    </div>
+  
+  </div> -->
+
+  <div *ngIf="player"  >
+
+    <h2>{{player.name | uppercase}} Details</h2>
+    <div class="player"><span>jerseyno: </span>{{player.jerseyno}}</div>
+    <div class="player"><span>name:</span>{{player.name}}</div>
+    <div class="player"><span>total centuries: </span>{{player.total_centuries}}</div>
+    <div class="player"><span>player type: </span>{{player.player_type}}</div>
+    <div class="player"><span>batting: </span>{{player.batting}}</div>
+    
+        
+        
+      
+  
+
+    
+  
+  </div>
