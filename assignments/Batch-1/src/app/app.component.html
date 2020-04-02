@@ -1,0 +1,6 @@
+<app-checkboxes (ChildOutputItem)="ParentOutput($event)" [checkHeader]='checkHeader' [checkList]='checkList' (showData)="showData"></app-checkboxes>
+<span *ngIf="showData">
+<div *ngFor="let item of checkedList">
+    <div *ngIf="item.selected==true">{{item.name}}</div>
+</div>
+</span>

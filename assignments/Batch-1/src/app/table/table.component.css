@@ -1,0 +1,21 @@
+p {
+    text-align: center;
+}
+
+table {
+    width: 20%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    border: 2px solid black;
+}

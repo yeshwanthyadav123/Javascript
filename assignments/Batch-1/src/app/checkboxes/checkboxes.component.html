@@ -1,0 +1,17 @@
+<div class="list-group">
+    <ul type="none">
+        <li class="list-head"><strong>
+            <input type="checkbox" id="headOption" (change)="selectAll($event);">{{checkHeader}}</strong>
+            <ul type="none" id="list-body">
+                <li *ngFor="let item of NewCheckList">
+                    <input type="checkbox" [(ngModel)]="item.selected"> {{(item.name)? item.name : item}}
+                    <!--input type="checkbox" id="item.id" value="{{item.name}}" [(ngModel)]="checkedList[item.name]" [checked]="checkvalue" (change)="onChange($event)"> {{item.name}} -->
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <button (click)="ChildOutput(NewCheckList)"> {{ (showData) ? 'Hide' : 'Show' }} Data</button>
+    <span *ngIf="showData">
+</span>
+</div>
