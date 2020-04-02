@@ -1,0 +1,54 @@
+<mat-card-header>
+  <mat-toolbar class="toolbar">
+    <mat-card-title>StudentData</mat-card-title>
+    <span class="toolbar-spacer"></span>&nbsp;
+    <mat-icon (click)="onNoClick()">cancel</mat-icon>
+  </mat-toolbar>
+</mat-card-header>
+<mat-card-content>
+  <div class="container">
+    <form [formGroup]="_contactForm" (submit)="onSubmit()">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+            <label class="lab">First Name:</label>
+            <input class="data" type="text" formControlName="FirstName" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="lab">Last Name:</label>
+            <input class="data" type="text" formControlName="LastName" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="lab">Contact Number:</label>
+            <input  class="data" type="text" formControlName="Contact" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="lab">Email:</label>
+            <input class="data" type="text" formControlName="Email" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="lab">Age:</label>
+            <input  class="data" type="number" formControlName="Age" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="lab">Branch:</label>
+            <input class="data" type="text" formControlName="Branch" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+          <button type="submit" class="btn btn-success">
+            <mat-icon>save</mat-icon>
+          </button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</mat-card-content>
